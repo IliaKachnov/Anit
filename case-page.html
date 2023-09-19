@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/case-page/styles-case-page.css">
+  <script src="./scripts/nav.js" defer></script>
+  <script src="./scripts/case-page.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <title>Cases</title>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="nav">
+      <div class="nav__wrapper">
+        <div class="nav__logo-wrapper">
+          <a href="index.html"><img class="logo__img" src="./img/anit-logo.svg" alt="Anit"></a>
+          <p class="logo__slogan">Внедрение и сопровождение Битрикс24</p>
+        </div>
+  
+        <div class="nav__main">
+          <a class="nav__link" href="#">Стартовое внедрение</a>
+          <a class="nav__link" href="#">Сопровождение</a>
+          <div class="dropdown__wrapper">
+            <p class="nav__link">Купить лицензию</з>
+            <img class="nav__black-arrow" src="img/icons/arrow.svg">
+            <ul class="nav__dropdown">
+              <a href="#"><li class="nav__dropdown-item">Облачная версия</li></a>
+              <a href="box-version.html"><li class="nav__dropdown-item">Коробочная версия</li></a>
+            </ul>
+          </div>
+          <div class="nav__item-wrapper">
+            <a href="#" class="nav__link">Аудит</a>
+            <p class="nav__free">free</p>
+          </div>
+          <div class="nav__item-wrapper">
+            <a href="#" class="nav__link">Демонстрация</a>
+            <p class="nav__free">free</p>
+          </div>
+          <a href="cases.html" class="nav__link active">Кейсы</a>
+          <a href="blog.html" class="nav__link">Блог</a>
+        </div>
+  
+        <div class="nav__support-wrapper">
+          <p class="nav__phone">+7 4212 79-90-00</p>
+          <div class="nav__phone-wrapper">
+            <img class="nav__phone-img" src="img/icons/phone.svg">
+          </div>
+          <div id="popup__open" class="nav__support">
+            <p class="nav__support-title">Консультация</p>
+            <svg class="nav__white-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
+            </svg>
+          </div>
+          <div id="burger__menu" class="nav__burger-wrapper">
+            <img id="burger" class="burger__img" src="img/icons/burger.svg">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="case__wrapper">
+        <div class="case__back-wrapper">
+          <a href="cases.html">
+            <svg class="case__back-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M11 10.9425L11 4.05746C11 3.22303 10.0383 2.75561 9.38218 3.27114L5.00077 6.71368C4.4912 7.11406 4.4912 7.88594 5.00077 8.28632L9.38218 11.7289C10.0383 12.2444 11 11.777 11 10.9425Z" fill="#081A32"/>
+            </svg>
+            <p class="case__back-title">К списку кейсов</p>
+          </a>
+        </div>
+        <h1 class="case__title">Подарочная акция фирмы «1С» — «Зима подарков 1С:ИТС»</h1>
+        <div class="case__nav-wrapper">
+          <p class="case__nav-service">Обслуживание 1С</p>
+          <p class="case__nav-date">16 мая 2023</p>
+          <div class="case__nav-share-wrapper">
+            <p class="case__nav-share">Поделиться:</p>
+            <div class="case__nav-icons-wrapper">
+              <a href="#">
+                <svg class="case__nav-img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3061 18.912H13.5794C13.5794 18.912 13.9613 18.838 14.1523 18.616C14.3433 18.394 14.3433 17.95 14.3433 17.95C14.3433 17.95 14.3433 16.026 15.1073 15.73C15.8712 15.434 16.8898 17.654 17.9084 18.468C18.6723 19.134 19.2453 18.986 19.2453 18.986L22.0464 18.912C22.0464 18.912 23.5106 18.838 22.8103 17.432C22.7467 17.358 22.4284 16.47 20.7095 14.62C18.927 12.696 19.1816 13.066 21.2824 9.736C22.5557 7.738 23.065 6.554 22.9377 5.962C22.8103 5.444 21.8554 5.592 21.8554 5.592H18.6723C18.6723 5.592 18.4177 5.518 18.2903 5.666C18.0994 5.814 18.0357 6.036 18.0357 6.036C18.0357 6.036 17.5264 7.59 16.8898 8.922C15.4892 11.66 14.9163 11.808 14.7253 11.66C14.216 11.29 14.3433 10.032 14.3433 9.218C14.3433 6.554 14.7253 5.444 13.643 5.148C13.3247 5.074 13.0701 5 12.1788 5C11.0329 5 10.078 5 9.56868 5.296C9.18671 5.518 8.93206 5.962 9.12305 5.962C9.31403 5.962 9.82333 6.11 10.078 6.48C10.3326 7.146 10.3326 8.256 10.3326 8.256C10.3326 8.256 10.5236 11.438 9.88699 11.808C9.44135 12.104 8.8684 11.512 7.59516 8.996C6.95855 7.738 6.44925 6.258 6.44925 6.258C6.44925 6.258 6.38559 5.962 6.1946 5.814C6.00362 5.666 5.68531 5.592 5.68531 5.592H2.69321C2.69321 5.592 2.24757 5.592 2.05659 5.814C1.92926 6.036 2.05659 6.406 2.05659 6.406C2.05659 6.406 4.41207 12.77 7.08587 16.026C9.56868 19.134 12.3061 18.912 12.3061 18.912V18.912Z" fill="#D7171F"/>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="case__nav-img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 4L3 11.5L10 12.5M22 4L19.5 19L10 12.5M22 4L10 12.5M10 12.5V18L13.249 14.723" stroke="#D7171F" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="case__nav-img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M18.3769 4.61905C17.5476 3.78558 16.5599 3.12475 15.4712 2.6751C14.3826 2.22544 13.2149 1.99597 12.0362 2.00005C7.09749 2.00005 3.07236 6.00504 3.07236 10.919C3.07236 12.494 3.48844 14.024 4.26633 15.374L3 20L7.74874 18.758C9.0603 19.469 10.5347 19.847 12.0362 19.847C16.9749 19.847 21 15.842 21 10.928C21 8.54303 20.0683 6.30204 18.3769 4.61905ZM12.0362 18.335C10.6975 18.335 9.38593 17.975 8.23719 17.3L7.96583 17.138L5.14372 17.876L5.89447 15.14L5.71357 14.861C4.96982 13.6793 4.5749 12.3133 4.57387 10.919C4.57387 6.83304 7.9206 3.50305 12.0271 3.50305C14.0171 3.50305 15.8894 4.27705 17.2915 5.68104C17.9857 6.36861 18.5358 7.18643 18.91 8.08712C19.2842 8.9878 19.475 9.95343 19.4714 10.928C19.4894 15.014 16.1427 18.335 12.0362 18.335ZM16.1246 12.791C15.8985 12.683 14.795 12.143 14.596 12.062C14.3879 11.99 14.2432 11.954 14.0894 12.17C13.9357 12.395 13.5106 12.899 13.3839 13.043C13.2573 13.196 13.1216 13.214 12.8955 13.097C12.6693 12.989 11.9457 12.746 11.0955 11.99C10.4261 11.396 9.98291 10.667 9.84724 10.442C9.7206 10.217 9.82914 10.1 9.94673 9.98303C10.0462 9.88403 10.1729 9.72203 10.2814 9.59603C10.3899 9.47003 10.4352 9.37103 10.5075 9.22703C10.5799 9.07403 10.5437 8.94803 10.4894 8.84003C10.4352 8.73203 9.98291 7.63404 9.80201 7.18404C9.6211 6.75204 9.43115 6.80604 9.29548 6.79704H8.86131C8.70754 6.79704 8.47236 6.85104 8.26432 7.07604C8.06533 7.30104 7.48643 7.84104 7.48643 8.93903C7.48643 10.037 8.29146 11.099 8.4 11.243C8.50854 11.396 9.98291 13.646 12.2261 14.609C12.7598 14.843 13.1759 14.978 13.5015 15.077C14.0352 15.248 14.5236 15.221 14.9126 15.167C15.3467 15.104 16.2422 14.627 16.4231 14.105C16.6131 13.583 16.6131 13.142 16.5497 13.043C16.4864 12.944 16.3508 12.899 16.1246 12.791Z" fill="#D7171F"/>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="case__nav-img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M16.8337 12.2043C16.5775 11.6627 15.8548 11.2067 14.8942 11.9762C13.5859 13.0594 11.5 13.0594 11.5 13.0594C11.5 13.0594 9.41409 13.0594 8.10582 11.9762C7.14521 11.2067 6.42246 11.6627 6.1663 12.2043C5.70886 13.1544 6.22119 13.62 7.38308 14.3895C8.38029 15.0546 9.74345 15.3017 10.6217 15.3967L9.88983 16.1568C8.84687 17.2304 7.84051 18.266 7.15436 18.9881C6.74267 19.4252 6.74267 20.1188 7.15436 20.5273L7.28244 20.6793C7.69413 21.1069 8.37114 21.1069 8.78283 20.6793L11.5 17.848C12.5521 18.9216 13.5493 19.9572 14.2446 20.6793C14.6563 21.1069 15.3242 21.1069 15.745 20.6793L15.8639 20.5273C16.2848 20.1188 16.2848 19.4252 15.8639 18.9881L13.1376 16.1568L12.4149 15.3872C13.284 15.3017 14.6289 15.0451 15.6169 14.3895C16.7788 13.62 17.2911 13.1544 16.8337 12.2043ZM11.5 4.44181C12.7625 4.44181 13.7872 5.50594 13.7872 6.8076C13.7872 8.11876 12.7625 9.1734 11.5 9.1734C10.2375 9.1734 9.21282 8.11876 9.21282 6.8076C9.21282 5.50594 10.2375 4.44181 11.5 4.44181ZM11.5 11.6152C14.0616 11.6152 16.1293 9.46793 16.1293 6.8076C16.1293 5.53255 15.6415 4.30971 14.7734 3.40811C13.9052 2.50651 12.7278 2 11.5 2C10.2722 2 9.09478 2.50651 8.22662 3.40811C7.35847 4.30971 6.87075 5.53255 6.87075 6.8076C6.87075 9.46793 8.93836 11.6152 11.5 11.6152Z" fill="#D7171F"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="case__user-img-wrapper">
+          <img class="case__user-img" src="img/case-page-user.png">
+        </div>
+      </section>
+
+      <section class="faq__wrapper">
+        <div class="faq__body">
+          <h2 class="faq__title">Оглавление</h2>
+          <div class="faq__item">
+            <p class="faq__number">01</p>
+            <a href="#" class="faq__subtitle">Почему был выбран «1С:Document Management»</a>
+          </div>
+
+          <div class="accordion__wrapper">
+            <div class="accordion active">
+              <div class="accordion__title-wrapper">
+                <p class="faq__number">02</p>
+                <p class="faq__subtitle">В рамках проекта требовалось</p>
+              </div>
+              <svg class="accordion__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M10.9425 5L4.05746 5C3.22303 5 2.75561 5.96169 3.27114 6.61782L6.71368 10.9992C7.11406 11.5088 7.88594 11.5088 8.28632 10.9992L11.7289 6.61782C12.2444 5.96169 11.777 5 10.9425 5Z" fill="#081A32"/>
+              </svg>
+            </div>
+            <div class="panel" style="max-height: 90px;">
+              <p class="panel__subtitle">Подзаголовок 1</p>
+              <p class="panel__subtitle">Подзаголовок 2</p>
+              <p class="panel__subtitle last">Подзаголовок 3</p>
+            </div>
+          </div>
+
+          <div class="accordion__wrapper">
+            <div class="accordion">
+              <div class="accordion__title-wrapper">
+                <p class="faq__number">03</p>
+                <p class="faq__subtitle">Как перейти на ставку НДС 20% в 1С со 2023 года?</p>
+              </div>
+              <svg class="accordion__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M10.9425 5L4.05746 5C3.22303 5 2.75561 5.96169 3.27114 6.61782L6.71368 10.9992C7.11406 11.5088 7.88594 11.5088 8.28632 10.9992L11.7289 6.61782C12.2444 5.96169 11.777 5 10.9425 5Z" fill="#081A32"/>
+              </svg>
+            </div>
+            <div class="panel">
+              <p class="panel__subtitle">Подзаголовок 1</p>
+              <p class="panel__subtitle">Подзаголовок 2</p>
+              <p class="panel__subtitle last">Подзаголовок 3</p>
+            </div>
+          </div>
+          
+          <div class="faq__item last">
+            <p class="faq__number">04</p>
+            <a href="#" class="faq__subtitle">Почему был выбран «1С:Document Management»</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="why__wrapper">
+        <h2 class="why__title">Почему был выбран «1С:Document Management»</h2>
+        <div class="reason__wrapper first">
+          <img class="reason__arrow" src="img/icons/red-arrows.png">
+          <p class="reason__text">Интерфейс на русском и английском языках;</p>
+        </div>
+        <div class="reason__wrapper">
+          <img class="reason__arrow" src="img/icons/red-arrows.png">
+          <p class="reason__text">Унификация информационных систем с другими продуктами «1С»;</p>
+        </div>
+        <div class="reason__wrapper">
+          <img class="reason__arrow" src="img/icons/red-arrows.png">
+          <p class="reason__text">Интеграция, в том числе бесшовная, с учётными системами «1С»;</p>
+        </div>
+        <div class="reason__wrapper">
+          <img class="reason__arrow" src="img/icons/red-arrows.png">
+          <p class="reason__text">Применение единых подходов к работе с документами;</p>
+        </div>
+        <div class="reason__wrapper">
+          <img class="reason__arrow" src="img/icons/red-arrows.png">
+          <p class="reason__text">Возможность расширения и тиражирования стандартного функционала.</p>
+        </div>
+        <p class="why__text">Проект внедрения был доверен компании «1С-Архитектор бизнеса», специалисты которой уже не первый год работают в направлении автоматизации документооборота и имеют статус «Центр компетенции по документообороту».</p>
+      </section>
+
+      <section class="projects__wrapper">
+        <h2 class="projects__title">В рамках проекта требовалось</h2>
+        <div class="requirement__wrapper first">
+          <img class="requirement__arrow" src="img/icons/red-arrows.png">
+          <div class="requirement__text-wrapper">
+            <p class="requirement__title">Существенно поднимем лояльность целевых аудиторий</p>
+            <p class="requirement__text">Мы не пытаемся «на вас заработать» мы предлагаем вам качественную услугу по демократичной цене.</p>
+          </div>
+        </div>
+        <div class="requirement__wrapper">
+          <img class="requirement__arrow" src="img/icons/red-arrows.png">
+          <div class="requirement__text-wrapper">
+            <p class="requirement__title">Уменьшим время обработки процессов</p>
+            <p class="requirement__text">Учредители компании — это три высококлассных программиста 1С. Поэтому для нас очень важно оказывать действительно квалифицированную помощь нашим клиентам.</p>
+          </div>
+        </div>
+        <div class="requirement__wrapper">
+          <img class="requirement__arrow" src="img/icons/red-arrows.png">
+          <div class="requirement__text-wrapper">
+            <p class="requirement__title">Исключим издержки на неэффективные процессы</p>
+            <p class="requirement__text">Если к нам пришёл клиент, то он останется с нами надолго, потому что мы дорожим нашими заказчиками, а наши заказчики, в свою очередь, рекомендуют нас своим знакомым.</p>
+          </div>
+        </div>
+        <p class="projects__text">Не секрет, что «1С» на сегодняшний день — самая распространённая программа на территории России и стран СНГ. Помимо стандартных задач, которые решались в рамках проекта, специалисты «1С-Архитектора бизнеса» предложили решение по интеграции «1С:Document Management» с другими информационными системами на платформе «1С:Предприятие 8.3» («1С:Управление производственным предприятием», «1С:Управление торговлей + CRM»).</p>
+      </section>
+
+      <section class="swiper__wrapper">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/case-page-laptop.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/case-page-laptop.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/case-page-laptop.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/case-page-laptop.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/case-page-laptop.png">
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <div class="next-btn">
+              <svg class="next-btn-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="#081A32"/>
+              </svg>
+            </div>
+          </div>
+          <div class="swiper-button-prev">
+            <div class="prev-btn">
+              <svg class="prev-btn-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="#081A32"/>
+              </svg>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="documents__wrapper">
+        <h2 class="documents__title">Документы</h2>
+        <div class="instructions__wrapper">
+          <div class="instruction__wrapper">
+            <p class="instruction__title">Инструкция по эксплуатации</p>
+            <div class="instruction__download-wrapper">
+              <p class="download__size">PDF, 173 КБ</p>
+              <a class="download__icon" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="#D7171F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7 10L12 15L17 10" stroke="#D7171F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 15V3" stroke="#D7171F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="instruction__wrapper">
+            <p class="instruction__title">Инструкция по эксплуатации</p>
+            <div class="instruction__download-wrapper">
+              <p class="download__size">PDF, 173 КБ</p>
+              <a class="download__icon" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="#D7171F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7 10L12 15L17 10" stroke="#D7171F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 15V3" stroke="#D7171F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why__wrapper second">
+        <h2 class="why__title">Почему был выбран «1С:Document Management»</h2>
+        <div class="reason__wrapper first">
+          <img class="reason__arrow" src="img/icons/red-arrows.png">
+          <p class="reason__text">Интерфейс на русском и английском языках;</p>
+        </div>
+        <div class="reason__wrapper">
+          <img class="reason__arrow" src="img/icons/red-arrows.png">
+          <p class="reason__text">Унификация информационных систем с другими продуктами «1С»;</p>
+        </div>
+        <div class="reason__wrapper">
+          <img class="reason__arrow" src="img/icons/red-arrows.png">
+          <p class="reason__text">Интеграция, в том числе бесшовная, с учётными системами «1С»;</p>
+        </div>
+        <div class="reason__wrapper">
+          <img class="reason__arrow" src="img/icons/red-arrows.png">
+          <p class="reason__text">Применение единых подходов к работе с документами;</p>
+        </div>
+        <div class="reason__wrapper">
+          <img class="reason__arrow" src="img/icons/red-arrows.png">
+          <p class="reason__text">Возможность расширения и тиражирования стандартного функционала.</p>
+        </div>
+      </section>
+
+      <section class="video">
+        <div class="video__wrapper">
+          <a href="#"><img class="play__img" src="img/play-red.png"></a>
+        </div>
+      </section>
+
+    </main>
+    <section class="contact__wrapper">
+      <div class="contact">
+        <h2 class="contact__title">Хотите похожий проект?</h2>
+        <p class="contact__text">Оставляйте свои контактные данные и мы свяжемся с вами для консультации.</p>
+        <div class="contact__btn-wrapper">
+          <a href="#" class="contact__btn">Связаться с нами</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div id="popup__open" class="footer__phone-wrapper">
+          <p class="footer__phone">+7 4212 79-90-00</p>
+          <div class="footer__support-wrapper">
+            <p class="footer__free-support">Бесплатная консультация</p>
+            <svg class="footer__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
+            </svg>
+          </div>
+        </div>
+        <div class="footer__links-wrapper">
+          <div class="footer__first-wrapper">
+            <div class="footer__logo-wrapper">
+              <a href="#"><img class="footer__logo" src="img/anit-logo.svg"></a>
+              <p class="footer__slogan">Внедрение и сопровождение Битрикс24</p>
+            </div>
+            <div class="footer__politics-wrapper">
+              <p class="footer__date">© ООО «АНИТ», 2023</p>
+              <a class="footer__politics" href="#">Политика конфиденциальности</a>
+            </div>
+          </div>
+          <div class="footer__items">
+            <p class="footer__title first">Услуги</p>
+            <div class="footer__second-wrapper">
+              <div class="footer__start-wrapper">
+                <p class="footer__link first">Стартовое внедрение</p>
+                <div class="footer__free-wrapper">
+                  <a href="#" class="footer__link">Аудит</a>
+                  <a href="#" class="footer__free">free</a>
+                </div>
+              </div>
+              <div class="footer__following-wrapper">
+                <a href="#" class="footer__link">Сопровождение</a>
+                <div class="footer__free-wrapper">
+                  <a href="#" class="footer__link">Демонстрация</a>
+                  <p class="footer__free">free</p>
+                </div>
+              </div>
+            </div>
+            <div class="footer__third-wrapper">
+              <div class="footer__buy-wrapper">
+                <p class="footer__title">Купить Битрикс24</p>
+                <p class="footer__title">Компания</p>
+              </div>
+              <div class="footer__cases-wrapper">
+                <a href="#" class="footer__link">Облачная версия</a>
+                <a href="#" class="footer__link">Кейсы</a>
+              </div>
+              <div class="footer__version-wrapper">
+                <a href="box-version.html" class="footer__link">Коробочная версия</a>
+                <a href="#" class="footer__link">Блог</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__date-mobile-wrapper">
+            <p class="footer__date">© ООО «АНИТ», 2023</p>
+            <a class="footer__politics" href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="popup__support" class="popup__support">
+      <div class="popup__support__body">
+        <div class="popup__support__content">
+          <div class="popup__image-wrapper">
+            <img id="support__close" class="popup__support__close-img" src="img/icons/crest.png">
+          </div>
+          <div class="popup__support__text-wrapper">
+            <h2 class="popup__title">Получить консультацию</h2>
+            <form class="popup__form" action="">
+              <div class="popup__name-wrapper">
+                <input class="popup__name" type="text" placeholder="Представьтесь" required>
+                <img class="star__name" src="img/icons/red-star.png">
+              </div>
+              <div class="popup__phone-wrapper">
+                <input class="popup__phone" type="tel" placeholder="Телефон" required>
+                <img class="star__phone" src="img/icons/red-star.png">
+              </div>
+              <div class="popup__checkbox-wrapper"> 
+                <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes" required>
+                <label for="happy">Я даю согласие на обработку персональных данных.</label>
+              </div>
+              <div class="popup__send-wrapper">
+                <input class="send__btn" type="submit" value="Отправить">
+                <svg class="popup__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="#fff"/>
+                </svg>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup__burger" class="popup__burger">
+      <div class="popup__burger__body">
+        <div class="popup__burger__content">
+          <div class="popup__burger__text-wrapper">
+            <a href="#" class="burger__item">Стартовое внедрение</a>
+            <a href="#" class="burger__item">Сопровождение</a>
+            <div class="burger__dropdown-wrapper">
+              <div class="burger__arrow-wrapper">
+                <a href="#" class="burger__item">Купить лицензию</a>
+                <svg class="burger__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                  <path d="M10.9425 5.5L4.05746 5.5C3.22303 5.5 2.75561 6.46169 3.27114 7.11782L6.71368 11.4992C7.11406 12.0088 7.88594 12.0088 8.28632 11.4992L11.7289 7.11782C12.2444 6.46169 11.777 5.5 10.9425 5.5Z" fill="#081A32"/>
+                </svg>
+              </div>
+              <ul class="burger__dropdown">
+                <li class="burger__dropdown-item"><a href="box-version.html">Коробочная версия</a></li>
+                <li class="burger__dropdown-item"><a href="#">Облачная версия</a></li>
+              </ul>
+            </div>
+            <div class="burger__free-wrapper">
+              <a href="#" class="burger__item">Аудит</a>
+              <p class="burger__free">free</p>
+            </div>
+            <div class="burger__free-wrapper">
+              <a href="#" class="burger__item">Демонстрация</a> 
+              <p class="burger__free">free</p>
+            </div>
+            <a href="cases.html" class="burger__item active">Кейсы</a>
+            <a href="blog.html" class="burger__item">Блог</a>
+            <p class="burger__phone">+7 4212 79-90-00</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
