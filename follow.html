@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/follow/styles-follow.css">
+  <script src="./scripts/nav.js" defer></script>
+  <script src="./scripts/follow.js" defer></script>
+  <script src="./scripts/popup-review.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <title>Follow</title>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="nav">
+      <div class="nav__wrapper">
+        <div class="nav__logo-wrapper">
+          <a href="index.html"><img class="logo__img" src="./img/anit-logo.svg" alt="Anit"></a>
+          <p class="logo__slogan">Внедрение и сопровождение Битрикс24</p>
+        </div>
+  
+        <div class="nav__main">
+          <a class="nav__link" href="index.html">Стартовое внедрение</a>
+          <a class="nav__link active" href="#">Сопровождение</a>
+          <div class="dropdown__wrapper">
+            <p class="nav__link">Купить лицензию</з>
+            <img class="nav__black-arrow" src="img/icons/arrow.svg">
+            <ul class="nav__dropdown">
+              <a href="#"><li class="nav__dropdown-item">Облачная версия</li></a>
+              <a href="box-version.html"><li class="nav__dropdown-item">Коробочная версия</li></a>
+            </ul>
+          </div>
+          <div class="nav__item-wrapper">
+            <a href="#" class="nav__link ">Аудит</a>
+            <p class="nav__free">free</p>
+          </div>
+          <div class="nav__item-wrapper">
+            <a href="demo.html" class="nav__link">Демонстрация</a>
+            <p class="nav__free">free</p>
+          </div>
+          <a href="cases.html" class="nav__link">Кейсы</a>
+          <a href="blog.html" class="nav__link">Блог</a>
+        </div>
+  
+        <div class="nav__support-wrapper">
+          <p class="nav__phone">+7 4212 79-90-00</p>
+          <div class="nav__phone-wrapper">
+            <img class="nav__phone-img" src="img/icons/phone.svg">
+          </div>
+          <div id="popup__open" class="nav__support">
+            <p class="nav__support-title">Консультация</p>
+            <svg class="nav__white-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
+            </svg>
+          </div>
+          <div id="burger__menu" class="nav__burger-wrapper">
+            <img id="burger" class="burger__img" src="img/icons/burger.svg">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="follow">
+        <div class="follow__wrapper">
+          <div class="follow__title-wrapper">
+            <h1 class="follow__title">Профессиональная техническая поддержка и сопровождение Битрикс24</h1>
+            <div class="follow__become-wrapper hide">
+              <p class="follow__become">Стать клиентом ANIT</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
+              </svg>
+            </div>
+          </div>
+          <div class="follow__items">
+            <div class="follow__item red">
+              <p class="follow__item-title red">40+</p>
+              <p class="follow__item-text red">Проектов мы запустили в 15 различных нишах</p>
+            </div>
+            <div class="follow__item gold">
+              <div class="follow__item-text-wrapper"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M18.4328 7.20609C17.821 5.80134 16.7653 4.63607 15.4278 3.88893C14.0902 3.14179 12.5445 2.85403 11.0277 3.06977C9.51094 3.28551 8.10676 3.99284 7.03049 5.08331C5.95422 6.17378 5.26527 7.58719 5.06925 9.10685C4.11558 9.33526 3.279 9.906 2.71836 10.7107C2.15773 11.5154 1.9121 12.4979 2.02811 13.4718C2.14412 14.4457 2.61369 15.343 3.34766 15.9935C4.08163 16.6439 5.02887 17.0021 6.0095 17H17.0124C18.2121 16.9967 19.3706 16.5622 20.2767 15.7758C21.1828 14.9894 21.776 13.9034 21.9482 12.716C22.1204 11.5286 21.8601 10.3189 21.2148 9.30739C20.5695 8.29592 19.5821 7.55015 18.4328 7.20609ZM17.0124 14.9992H6.0095C5.47893 14.9992 4.97009 14.7884 4.59491 14.4132C4.21974 14.038 4.00897 13.529 4.00897 12.9984C4.00897 12.4678 4.21974 11.9588 4.59491 11.5836C4.97009 11.2084 5.47893 10.9976 6.0095 10.9976C6.27479 10.9976 6.52921 10.8922 6.7168 10.7046C6.90439 10.517 7.00977 10.2625 7.00977 9.9972C7.01233 8.81401 7.43417 7.67003 8.20036 6.7685C8.96655 5.86697 10.0275 5.26627 11.1946 5.07312C12.3618 4.87996 13.5596 5.10686 14.5754 5.71351C15.5911 6.32015 16.3589 7.26726 16.7424 8.38656C16.801 8.55661 16.9045 8.70768 17.0418 8.82388C17.1791 8.94007 17.3452 9.01709 17.5226 9.04683C18.2558 9.18213 18.9123 9.58557 19.3644 10.1785C19.8164 10.7715 20.0316 11.5116 19.9679 12.2545C19.9042 12.9974 19.5663 13.6901 19.0199 14.1975C18.4736 14.7048 17.758 14.9907 17.0124 14.9992Z" fill="#FEE456"/>
+                </svg>
+                <p class="follow__item-title gold">Б24</p>
+              </div>
+              <p class="follow__item-text gold">Золотой сертифицированный партнер компании Битрикс24</p>
+            </div>
+          </div>
+          <div class="follow__become-wrapper mobile">
+            <p class="follow__become hide">Стать клиентом ANIT</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
+            </svg>
+          </div>
+        </div>
+        <div class="scroll__wrapper">
+          <svg class="scroll__img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M10.3354 9.7012C10.6654 10.8437 11.9576 11.5152 13.1392 11.1774C14.0738 10.9099 14.6934 10.1257 14.7501 9.1948C14.7717 8.84452 14.7778 8.233 14.6676 7.85454C14.4664 7.16264 14.0002 6.67518 13.269 6.39216C13.2568 6.38739 13.2507 6.37874 13.2507 6.36621V2.01754C13.2507 2.01509 13.2512 2.01266 13.2523 2.01042C13.2534 2.00818 13.2549 2.00617 13.2568 2.00452C13.2588 2.00288 13.2611 2.00163 13.2636 2.00087C13.2661 2.0001 13.2687 1.99984 13.2714 2.00009C16.9042 2.39421 19.6574 5.09217 19.9723 8.56359C19.9911 8.77027 20.0003 9.06805 20 9.45694C19.9991 11.2347 19.9955 13.0122 19.9892 14.7893C19.983 16.6906 19.3269 18.3237 18.0211 19.6887C16.0812 21.7165 13.0309 22.4958 10.2834 21.6825C7.37138 20.82 5.30208 18.3596 5.03164 15.4572C5.0132 15.2562 5.00367 14.9581 5.00305 14.563C4.99898 11.7572 4.99898 9.92398 5.00305 9.06328C5.02133 5.40576 7.96569 2.39108 11.7256 2.00636C11.7425 2.00486 11.7509 2.01217 11.7509 2.02828V6.36621C11.7509 6.37904 11.7448 6.38784 11.7326 6.39261C10.8333 6.74542 10.3392 7.3896 10.2501 8.32515C10.2183 8.65932 10.2314 9.33929 10.3354 9.7012Z" fill="#081A32"/>
+            <path d="M13.2128 9.32945C12.9578 10.0984 11.779 9.93784 11.7584 9.13083C11.7509 8.82842 11.6829 8.29429 11.8564 8.03527C12.176 7.55795 12.9395 7.57853 13.1786 8.09924C13.2803 8.32068 13.299 9.06909 13.2128 9.32945Z" fill="#081A32"/>
+          </svg>
+          <p class="scroll__text">Листайте ниже</p>
+        </div>
+      </section>
+
+      <section class="for">
+        <div class="for__wrapper">
+          <h2 class="for__title">Для чего нужно сопровождение Битрикс24</h2>
+          <div class="for__items">
+            <div class="for__item">
+              <div class="for__item-text-wrapper">
+                <p class="for__item-title">Развитие</p>
+                <p class="for__item-text">В любой развивающейся компании постоянно появляются новые или трансформируются текущие процессы, которые нужно переносить на Битрикс24, чтобы поддерживать систему.</p>
+              </div>
+              <p class="for__item-number">01</p>
+            </div>
+            <div class="for__item">
+              <div class="for__item-text-wrapper">
+                <p class="for__item-title">Поддержка</p>
+                <p class="for__item-text">В процессе работы с Битрикс24 регулярно возникают вопросы консультационного характера, а техподдержка Битрикса отвечает очень долго и не всегда даёт внятный ответ.</p>
+              </div>
+              <p class="for__item-number">02</p>
+            </div>
+            <div class="for__item large">
+              <div class="for__item-text-wrapper">
+                <p class="for__item-title">Обновления</p>
+                <p class="for__item-text">Битрикс24 обновляется 2–3 раза в год, и в нем постоянно появляются новые возможности, которые значительно упрощают работу любого бизнеса. Клиенты не всегда следят за обновлениями и могут упустить из виду полезный функционал.</p>
+              </div>
+              <p class="for__item-number">03</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="situation">
+        <div class="situation__wrapper">
+          <h2 class="situation__title">В каких ситуациях сопровождение необходимо бизнесу?</h2>
+          <div class="situation__blocks">
+            <div class="situation__block">
+              <img class="situation__img" src="img/follow-desktop.png">
+              <p class="situation__text">Вы делали попытку внедрения Битрикс24, но она не увенчалась успехом. Проще все разобрать и построить заново.</p>
+            </div>
+            <div class="situation__block">
+              <img class="situation__img"  src="img/follow-round.png" alt="">
+              <p class="situation__text">Вы планируете внедрение Битрикс24 и только начинаете изучать его возможности.</p>
+            </div>
+          </div>
+          <div class="situation__footer-wrapper">
+            <div class="situation__footer-img-wrapper">
+              <img class="situation__footer-img" src="img/follow-woman-sit.png" alt="">
+            </div>
+            <div class="situation__footer-text-wrapper">
+              <p class="situation__footer-text">В этих двух случаях мы предложим вам обратиться к отдельному подразделению, которое занимается стартовым внедрением Битрикс24, и только после этого перейти в отдел сопровождения</p>
+              <div class="situation__footer-receive-wrapper">
+                <p class="situation__footer-receive">Получить консультацию</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="clients"> 
+        <div class="clients__wrapper">
+          <h2 class="clients__title">Клиенты говорят о нас</h2>
+          <div class="review__items">
+
+            <div class="review__item first">
+              <div class="review__photo">
+                <img class="review__img" src="img/home-review.png">
+                <img class="review__rating" src="img/home-rating.png" alt="">
+              </div>
+              <div class="review__body">
+                <p class="review__user">Виктор Шамиров</p>
+                <p class="review__text">В заключении добавлю, социализм регрессийно формирует лайн-ап. Процессуальное изменение продолжает антропологический фьюжн. Англо-американский тип политической культуры означает институциональный дисторшн. Политическое учение Аристотеля случайно.</p>
+                <div class="review__btns">
+                  <div class="review__review-wrapper">
+                    <p class="review__review">Читать весь отзыв</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
+                    </svg>
+                  </div>
+                  <div class="review__pagination">
+                    <div class="review__pagination-prev">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M11 5.05746L11 11.9425C11 12.777 10.0383 13.2444 9.38218 12.7289L5.00077 9.28632C4.4912 8.88594 4.4912 8.11406 5.00077 7.71368L9.38218 4.27114C10.0383 3.75562 11 4.22303 11 5.05746Z" fill="#D8DFE6"/>
+                      </svg>
+                    </div>
+                    <div id="next-first" class="review__pagination-next">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="#081A32"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="second" class="review__item second hide">
+              <div class="review__photo">
+                <img class="review__img" src="img/home-review.png">
+                <img class="review__rating" src="img/home-rating.png" alt="">
+              </div>
+              <div class="review__body">
+                <p class="review__user">Виктор Шамиров</p>
+                <p class="review__text">В заключении добавлю, социализм регрессийно формирует лайн-ап. Процессуальное изменение продолжает антропологический фьюжн. Англо-американский тип политической культуры означает институциональный дисторшн. Политическое учение Аристотеля случайно.</p>
+                <div class="review__btns">
+                  <div id="popup__open-review" class="review__review-wrapper">
+                    <p class="review__review">Читать весь отзыв</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
+                    </svg>
+                  </div>
+                  <div class="review__pagination">
+                    <div id="prev-btn-second" class="review__pagination-next">
+                      <svg class="review__arrow-reverse" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="#081A32"/>
+                      </svg>
+                    </div>
+                    <div id="next-btn-third" class="review__pagination-next">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="#081A32"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="third" class="review__item third hide">
+              <div class="review__photo">
+                <img class="review__img" src="img/home-review.png">
+                <img class="review__rating" src="img/home-rating.png" alt="">
+              </div>
+              <div class="review__body">
+                <p class="review__user">Виктор Шамиров</p>
+                <p class="review__text">В заключении добавлю, социализм регрессийно формирует лайн-ап. Процессуальное изменение продолжает антропологический фьюжн. Англо-американский тип политической культуры означает институциональный дисторшн. Политическое учение Аристотеля случайно.</p>
+                <div class="review__btns">
+                  <div id="popup__open-review" class="review__review-wrapper">
+                    <p class="review__review">Читать весь отзыв</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
+                    </svg>
+                  </div>
+                  <div class="review__pagination">
+                    <div id="prev-btn-third" class="review__pagination-next">
+                      <svg class="review__arrow-reverse" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="#081A32"/>
+                      </svg>
+                    </div>
+                    <div class="review__pagination-next">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="#081A32"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="reviews__mobile-wrapper">
+            <div class="reviews__mobile">
+              <img class="reviews__mobile-img" src="img/review.png" alt="">
+              <p class="reviews__mobile-title">Виктор Шамиров</p>
+              <p class="reviews__mobile-text">В заключении добавлю, социализм регрессийно формирует лайн-ап. Процессуальное изменение продолжает антропологический фьюжн. Англо-американский тип политической культуры означает институциональный дисторшн. Политическое учение Аристотеля случайно.</p>
+              <div class="read__all-wrapper">
+                <p class="read">Читать весь отзыв</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+            <div class="reviews__mobile">
+              <img class="reviews__mobile-img" src="img/review.png" alt="">
+              <p class="reviews__mobile-title">Виктор Шамиров</p>
+              <p class="reviews__mobile-text">В заключении добавлю, социализм регрессийно формирует лайн-ап. Процессуальное изменение продолжает антропологический фьюжн. Англо-американский тип политической культуры означает институциональный дисторшн. Политическое учение Аристотеля случайно.</p>
+              <div class="read__all-wrapper">
+                <p class="read">Читать весь отзыв</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+            <div class="reviews__mobile">
+              <img class="reviews__mobile-img" src="img/review.png" alt="">
+              <p class="reviews__mobile-title">Виктор Шамиров</p>
+              <p class="reviews__mobile-text">В заключении добавлю, социализм регрессийно формирует лайн-ап. Процессуальное изменение продолжает антропологический фьюжн. Англо-американский тип политической культуры означает институциональный дисторшн. Политическое учение Аристотеля случайно.</p>
+              <div class="read__all-wrapper">
+                <p class="read">Читать весь отзыв</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service">
+        <div class="service__wrapper">
+          <div class="service__img-wrapper">
+            <img class="service__img" src="img/follow-laptop.png" alt="">
+            <p class="service__img-text">Что входит в услуги сопровождения</p>
+          </div>
+          <div class="service__items">
+            <div class="service__item">
+              <img class="service__item-img" src="img/follow-sms.png">
+              <p class="service__item-text">Развёрнутые консультации по любым вопросам в Битрикс24</p>
+            </div>
+            <div class="service__item">
+              <img class="service__item-img" src="img/follow-phone.png">
+              <p class="service__item-text">Развёрнутые консультации по любым вопросам в Битрикс24</p>
+            </div>
+            <div class="service__item">
+              <img class="service__item-img" src="img/follow-settings.png">
+              <p class="service__item-text">Развёрнутые консультации по любым вопросам в Битрикс24</p>
+            </div>
+            <div class="service__item">
+              <img class="service__item-img" src="img/follow-book.png" alt="">
+              <p class="service__item-text">Развёрнутые консультации по любым вопросам в Битрикс24</p>
+            </div>
+            <div class="service__item">
+              <img class="service__item-img" src="img/follow-blocks.png" alt="">
+              <p class="service__item-text">Развёрнутые консультации по любым вопросам в Битрикс24</p>
+            </div>
+            <div class="service__item">
+              <img class="service__item-img" src="img/follow-circle.png" alt="">
+              <p class="service__item-text">Развёрнутые консультации по любым вопросам в Битрикс24</p>
+            </div>  
+          </div>
+        </div>
+      </section>
+
+      <section class="not">
+        <div class="not__wrapper">
+          <h1 class="not__title">Что не входит в услуги сопровождения</h1>
+          <div class="not__items">
+            <div class="not__item">
+              <img class="not__img" src="img/follow-server.png" alt="">
+              <div class="not__text-wrapper">
+                <p class="not__text">Техническое обслуживание вашего сервера</p>
+                <div class="not__btn-wrapper">
+                  <p class="not__btn">Подробнее</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="not__item">
+              <img class="not__img" src="img/follow-screen.png" alt="">
+              <div class="not__text-wrapper">
+                <p class="not__text">Нештатная доработка Битрикс24</p>
+                <div class="not__btn-wrapper">
+                  <p class="not__btn">Подробнее</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="not__item">
+              <img class="not__img" src="img/follow-work.png" alt="">
+              <div class="not__text-wrapper">
+                <p class="not__text">Устранение технических сбоев на стороне Битрикс24</p>
+                <div class="not__btn-wrapper">
+                  <p class="not__btn">Подробнее</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="popup__open" class="not__support-wrapper">
+            <p class="not__support">Получить консультацию</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="calc">
+        <div class="calc__wrapper">
+          <h2 class="calc__title">Ознакомьтесь с CRM Битрикс24 бесплатно</h2>
+          <p class="calc__text">С вами свяжется наш специалист, задаст уточняющие вопросы и запишет на встречу, где мы продемонстрируем возможности Битрикс24 под задачи именно вашего бизнеса. Вы сможете оценить наши компетенции и принять решение о дальнейшем сотрудничестве.</p>
+          <a href="#">
+            <div class="calc__btn-wrapper">
+              <p class="calc__btn">Записаться на демонстрацию</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <path d="M5.5 5.05789L5.5 11.943C5.5 12.7774 6.46169 13.2448 7.11782 12.7293L11.4992 9.28675C12.0088 8.88637 12.0088 8.11449 11.4992 7.71411L7.11782 4.27157C6.46169 3.75604 5.5 4.22346 5.5 5.05789Z" fill="white"/>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </section>
+      
+
+      <section class="blueprint">
+        <img class="blueprint__progress" src="img/sups.png" alt="">
+        <div class="blueprint__wrapper">
+          <h1 class="blueprint__title">Схема работы по сопровождению</h1>
+          <div class="blueprint__container">
+            <div class="blueprint__inner-container">
+              <div class="blueprint__sticky-wrapper">
+                <img class="blueprint__img" src="img/follow-bell.png">
+                <div class="blueprint__block">
+                  <p class="blueprint__block-title">Есть вопросы?</p>
+                  <p class="blueprint__block-text">Напишите нам и мы обязательно свяжемся с вами.</p>
+                </div>
+                <div class="blueprint__contact-wrapper">
+                  <p class="blueprint__contact">Связаться с нами</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="blueprint__background">
+                <div class="blueprint__item-container-first">
+                  <div class="blueprint__item first">
+                    <div class="blueprint__item-text-wrapper">
+                      <p class="blueprint__number">01</p>
+                      <p class="blueprint__item-title">Старт сотрудничества</p>
+                    </div>
+                    <div class="blueprint__text-wrapper">
+                      <p class="blueprint__text">Вы приобретаете лицензию Битрикс24 и получаете денежные средства на бонусный счёт согласно вашему тарифу.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="blueprint__item-container-second">
+                  <div class="blueprint__item second">
+                    <div class="blueprint__item-text-wrapper">
+                      <p class="blueprint__number">02</p>
+                      <p class="blueprint__item-title">Анализ бизнес-процессов компании</p>
+                    </div>
+                    <div class="blueprint__text-wrapper">
+                      <p class="blueprint__text">Перед тем как вы перейдёте к работе с отделом сопровождения, наши бизнес-аналитики проведут краткий анализ вашего бизнеса и определят ключевые проблемы в компании.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="blueprint__item-container-third">
+                  <div class="blueprint__item third">
+                    <div class="blueprint__item-text-wrapper">
+                      <p class="blueprint__number">03</p>
+                      <p class="blueprint__item-title">Переход в отдел сопровождения</p>
+                    </div>
+                    <div class="blueprint__text-wrapper">
+                      <p class="blueprint__text">После проведения аудита ваш портал передаётся в отдел сопровождения, где за вами будет закреплён персональный менеджер по развитию.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="blueprint__item-container-fourth">
+                  <div class="blueprint__item fourth">
+                    <div class="blueprint__item-text-wrapper">
+                      <p class="blueprint__number">04</p>
+                      <p class="blueprint__item-title">Техническая доработка портала</p>
+                    </div>
+                    <div class="blueprint__text-wrapper">
+                      <p class="blueprint__text">Если у Битрикс24 вышли какие‑либо обновления, подходящие для ваших задач или у вас возникнет необходимость в донастройке портала (настройка воронок продаж, бизнес-процессов, отчётов) — менеджер по развитию подключит специалиста, который реализует эти запросы.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="blueprint__item-container-fifth">
+                  <div class="blueprint__item fifth">
+                    <div class="blueprint__item-text-wrapper">
+                      <p class="blueprint__number">05</p>
+                      <p class="blueprint__item-title">Регулярное сопровождение портала</p>
+                    </div>
+                    <div class="blueprint__text-wrapper">
+                      <p class="blueprint__text">Вы можете воспользоваться услугами администратора, который будет ежедневно находиться на вашем портале, оказывать консультационные услуги и техническую поддержку, а также выполнять небольшие доработки в рамках функционала вашего портала.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="report">
+        <div class="report__wrapper">
+          <div class="report__first-section">
+            <h2 class="report__title">Отчётность и формат оплаты</h2>
+            <div class="report__items">
+              <div class="report__item">
+                <img class="report__img" src="img/follow-red-check.png">
+                <p class="report__text">Специалист по сопровождению делает необходимые настройки на портале и проводит обучение сотрудников, которых коснулись обновления. При необходимости он подготовит письменные инструкции для работы.</p>
+              </div>
+              <div class="report__item">
+                <img class="report__img" src="img/follow-red-check.png">
+                <p class="report__text">По итогу произведённых обновлений предоставляет отчёт о проделанной работе и затраченных часах и информацию о количестве оставшихся часов на балансе.</p>
+              </div>
+              <div class="report__item">
+                <img class="report__img" src="img/follow-red-check.png">
+                <p class="report__text">Если у вас заканчиваются часы поддержки — вы просто приобретаете дополнительные часы согласно тарифам и продолжаете сотрудничество.</p>
+              </div>
+            </div>
+          </div>
+          <div class="report__img-wrapper">
+            <img class="report__img-woman" src="img/follow-woman.png">
+          </div>
+        </div>
+      </section>
+
+
+      <section class="plans">
+        <div class="plans__wrapper">
+          <h2 class="plans__title">Тарифы</h2>
+          <div class="plans__filters">
+            <p class="plans__filter">Облачное решение</p>
+            <p class="plans__filter active">Коробочное решение</p>
+          </div>
+          <div class="plans__items">
+            <div class="plans__item">
+              <div>
+                <h3 class="plans__item-title">Box Lite</h3>
+              <div class="plans__item-list">
+                <div class="item__list">
+                  <svg class="item__list-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                  </svg>
+                  <p class="item__list-text">Связь с нашими специалистами каждый рабочий день с 09:00 до 18:00 в чате, почте, задачах, по телефону;</p>
+                </div>
+                <div class="item__list">
+                  <svg class="item__list-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                  </svg>
+                  <p class="item__list-text">Отвечаем на 95% вопросов в течение рабочего дня;</p>
+                </div>
+                <div class="item__list">
+                  <svg class="item__list-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                  </svg>
+                  <p class="item__list-text">Консультируем только администраторов портала;</p>
+                </div>
+                <div class="item__list">
+                  <svg class="item__list-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                  </svg>
+                  <p class="item__list-text">Контролируем сроки регистрации домена и сертификата SSL;</p>
+                </div>
+                <div class="item__list">
+                  <svg class="item__list-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                  </svg>
+                  <p class="item__list-text">Консультации по работе штатного функционала: «Как работает CRM-форма? Куда нажать, чтобы выполнить задачу?» — и другие;</p>
+                </div>
+                <div class="item__list">
+                  <svg class="item__list-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                  </svg>
+                  <p class="item__list-text">Мониторинг ошибок и сбоев 24/7;</p>
+                </div>
+                <div class="item__list">
+                  <svg class="item__list-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                  </svg>
+                  <p class="item__list-text">Настройки + доработки за доп. часы;</p>
+                </div>
+                <div class="item__list">
+                  <svg class="item__list-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                  </svg>
+                  <p class="item__list-text">Скидка на ставку часа 10%.</p>
+                </div>
+              </div>
+              </div>
+              <div class="plans__price-wrapper">
+                <p class="plans__price">14 900 ₽/мес</p>
+                <div class="plans__order-wrapper">
+                  <p class="plans__order">Заказать</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="plans__item">
+              <div>
+                <h3 class="plans__item-title">Box PRO</h3>
+                <div class="plans__item-high-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                  </svg>
+                  <p class="plans__item-high">Все возможности тарифа «Box Lite», а также:</p>
+                </div>
+                <div class="plans__plus-items">
+                  <div class="plans__plus-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8.95162 4.88844C8.95162 5.54408 8.95594 6.1954 8.94731 6.85103C8.94299 7.01494 8.99046 7.04945 9.15011 7.04945C10.423 7.04082 11.6959 7.04513 12.9688 7.04513C13.5771 7.04513 14 7.43334 14 7.98976C14 8.54619 13.5771 8.94302 12.9731 8.94302C11.7002 8.94302 10.4273 8.94733 9.15442 8.9387C8.98183 8.9387 8.94299 8.99046 8.94731 9.15437C8.95594 10.4484 8.95162 11.7424 8.95162 13.0364C8.95162 13.5109 8.61938 13.9034 8.16632 13.9854C7.73915 14.063 7.30766 13.8258 7.13076 13.4203C7.07035 13.278 7.04877 13.1313 7.05309 12.9803C7.05309 11.7079 7.04877 10.4354 7.0574 9.163C7.0574 8.97752 7.00563 8.94302 6.83303 8.94302C5.54721 8.95164 4.25706 8.94733 2.97124 8.94733C2.4664 8.94733 2.05218 8.58501 2.00471 8.11054C1.95725 7.61018 2.27223 7.17022 2.77276 7.07101C2.86337 7.05376 2.95829 7.05376 3.05322 7.05376C4.31747 7.05376 5.58604 7.04945 6.85029 7.05807C7.02288 7.05807 7.06172 7.00631 7.0574 6.8424C7.04877 5.54839 7.05309 4.25438 7.05309 2.96037C7.05309 2.49883 7.35081 2.12788 7.79524 2.02436C8.20515 1.92516 8.64958 2.13651 8.84375 2.5204C8.92142 2.67137 8.95162 2.83096 8.95162 2.99919C8.94731 3.62463 8.95162 4.25869 8.95162 4.88844Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="plans__plus-item-text">Отвечаем в течение 2 рабочих часов;</p>
+                  </div>
+                  <div class="plans__plus-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8.95162 4.88844C8.95162 5.54408 8.95594 6.1954 8.94731 6.85103C8.94299 7.01494 8.99046 7.04945 9.15011 7.04945C10.423 7.04082 11.6959 7.04513 12.9688 7.04513C13.5771 7.04513 14 7.43334 14 7.98976C14 8.54619 13.5771 8.94302 12.9731 8.94302C11.7002 8.94302 10.4273 8.94733 9.15442 8.9387C8.98183 8.9387 8.94299 8.99046 8.94731 9.15437C8.95594 10.4484 8.95162 11.7424 8.95162 13.0364C8.95162 13.5109 8.61938 13.9034 8.16632 13.9854C7.73915 14.063 7.30766 13.8258 7.13076 13.4203C7.07035 13.278 7.04877 13.1313 7.05309 12.9803C7.05309 11.7079 7.04877 10.4354 7.0574 9.163C7.0574 8.97752 7.00563 8.94302 6.83303 8.94302C5.54721 8.95164 4.25706 8.94733 2.97124 8.94733C2.4664 8.94733 2.05218 8.58501 2.00471 8.11054C1.95725 7.61018 2.27223 7.17022 2.77276 7.07101C2.86337 7.05376 2.95829 7.05376 3.05322 7.05376C4.31747 7.05376 5.58604 7.04945 6.85029 7.05807C7.02288 7.05807 7.06172 7.00631 7.0574 6.8424C7.04877 5.54839 7.05309 4.25438 7.05309 2.96037C7.05309 2.49883 7.35081 2.12788 7.79524 2.02436C8.20515 1.92516 8.64958 2.13651 8.84375 2.5204C8.92142 2.67137 8.95162 2.83096 8.95162 2.99919C8.94731 3.62463 8.95162 4.25869 8.95162 4.88844Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="plans__plus-item-text">Контроль и редактирование прав доступа пользователей;</p>
+                  </div>
+                  <div class="plans__plus-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8.95162 4.88844C8.95162 5.54408 8.95594 6.1954 8.94731 6.85103C8.94299 7.01494 8.99046 7.04945 9.15011 7.04945C10.423 7.04082 11.6959 7.04513 12.9688 7.04513C13.5771 7.04513 14 7.43334 14 7.98976C14 8.54619 13.5771 8.94302 12.9731 8.94302C11.7002 8.94302 10.4273 8.94733 9.15442 8.9387C8.98183 8.9387 8.94299 8.99046 8.94731 9.15437C8.95594 10.4484 8.95162 11.7424 8.95162 13.0364C8.95162 13.5109 8.61938 13.9034 8.16632 13.9854C7.73915 14.063 7.30766 13.8258 7.13076 13.4203C7.07035 13.278 7.04877 13.1313 7.05309 12.9803C7.05309 11.7079 7.04877 10.4354 7.0574 9.163C7.0574 8.97752 7.00563 8.94302 6.83303 8.94302C5.54721 8.95164 4.25706 8.94733 2.97124 8.94733C2.4664 8.94733 2.05218 8.58501 2.00471 8.11054C1.95725 7.61018 2.27223 7.17022 2.77276 7.07101C2.86337 7.05376 2.95829 7.05376 3.05322 7.05376C4.31747 7.05376 5.58604 7.04945 6.85029 7.05807C7.02288 7.05807 7.06172 7.00631 7.0574 6.8424C7.04877 5.54839 7.05309 4.25438 7.05309 2.96037C7.05309 2.49883 7.35081 2.12788 7.79524 2.02436C8.20515 1.92516 8.64958 2.13651 8.84375 2.5204C8.92142 2.67137 8.95162 2.83096 8.95162 2.99919C8.94731 3.62463 8.95162 4.25869 8.95162 4.88844Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="plans__plus-item-text">Еженедельное резервное копирование;</p>
+                  </div>
+                  <div class="plans__plus-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8.95162 4.88844C8.95162 5.54408 8.95594 6.1954 8.94731 6.85103C8.94299 7.01494 8.99046 7.04945 9.15011 7.04945C10.423 7.04082 11.6959 7.04513 12.9688 7.04513C13.5771 7.04513 14 7.43334 14 7.98976C14 8.54619 13.5771 8.94302 12.9731 8.94302C11.7002 8.94302 10.4273 8.94733 9.15442 8.9387C8.98183 8.9387 8.94299 8.99046 8.94731 9.15437C8.95594 10.4484 8.95162 11.7424 8.95162 13.0364C8.95162 13.5109 8.61938 13.9034 8.16632 13.9854C7.73915 14.063 7.30766 13.8258 7.13076 13.4203C7.07035 13.278 7.04877 13.1313 7.05309 12.9803C7.05309 11.7079 7.04877 10.4354 7.0574 9.163C7.0574 8.97752 7.00563 8.94302 6.83303 8.94302C5.54721 8.95164 4.25706 8.94733 2.97124 8.94733C2.4664 8.94733 2.05218 8.58501 2.00471 8.11054C1.95725 7.61018 2.27223 7.17022 2.77276 7.07101C2.86337 7.05376 2.95829 7.05376 3.05322 7.05376C4.31747 7.05376 5.58604 7.04945 6.85029 7.05807C7.02288 7.05807 7.06172 7.00631 7.0574 6.8424C7.04877 5.54839 7.05309 4.25438 7.05309 2.96037C7.05309 2.49883 7.35081 2.12788 7.79524 2.02436C8.20515 1.92516 8.64958 2.13651 8.84375 2.5204C8.92142 2.67137 8.95162 2.83096 8.95162 2.99919C8.94731 3.62463 8.95162 4.25869 8.95162 4.88844Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="plans__plus-item-text">Мониторинг работы всех служб портала (почтовая служба, служба резервного копирования, сервер очередей для чата, уведомлений и диска и др.);</p>
+                  </div>
+              </div>
+              </div>
+              <div class="plans__price-wrapper">
+                <p class="plans__price">29 900 ₽/мес</p>
+                <div class="plans__order-wrapper">
+                  <p class="plans__order">Заказать</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="plans__item">
+              <div>
+                <h3 class="plans__item-title">Box Maximum</h3>
+                <div class="plans__item-high-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                  </svg>
+                  <p class="plans__item-high">Все возможности тарифа «Box PRO», а также:</p>
+                </div>
+                <div class="plans__plus-items">
+                  <div class="plans__plus-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8.95162 4.88844C8.95162 5.54408 8.95594 6.1954 8.94731 6.85103C8.94299 7.01494 8.99046 7.04945 9.15011 7.04945C10.423 7.04082 11.6959 7.04513 12.9688 7.04513C13.5771 7.04513 14 7.43334 14 7.98976C14 8.54619 13.5771 8.94302 12.9731 8.94302C11.7002 8.94302 10.4273 8.94733 9.15442 8.9387C8.98183 8.9387 8.94299 8.99046 8.94731 9.15437C8.95594 10.4484 8.95162 11.7424 8.95162 13.0364C8.95162 13.5109 8.61938 13.9034 8.16632 13.9854C7.73915 14.063 7.30766 13.8258 7.13076 13.4203C7.07035 13.278 7.04877 13.1313 7.05309 12.9803C7.05309 11.7079 7.04877 10.4354 7.0574 9.163C7.0574 8.97752 7.00563 8.94302 6.83303 8.94302C5.54721 8.95164 4.25706 8.94733 2.97124 8.94733C2.4664 8.94733 2.05218 8.58501 2.00471 8.11054C1.95725 7.61018 2.27223 7.17022 2.77276 7.07101C2.86337 7.05376 2.95829 7.05376 3.05322 7.05376C4.31747 7.05376 5.58604 7.04945 6.85029 7.05807C7.02288 7.05807 7.06172 7.00631 7.0574 6.8424C7.04877 5.54839 7.05309 4.25438 7.05309 2.96037C7.05309 2.49883 7.35081 2.12788 7.79524 2.02436C8.20515 1.92516 8.64958 2.13651 8.84375 2.5204C8.92142 2.67137 8.95162 2.83096 8.95162 2.99919C8.94731 3.62463 8.95162 4.25869 8.95162 4.88844Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="plans__plus-item-text">Оперативное реагирование на проблемы в Битрикс24, влияющие на работоспособность компании (поддержка осуществляется в будние дни с 09:00 до 18:00 мск);</p>
+                  </div>
+                  <div class="plans__plus-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8.95162 4.88844C8.95162 5.54408 8.95594 6.1954 8.94731 6.85103C8.94299 7.01494 8.99046 7.04945 9.15011 7.04945C10.423 7.04082 11.6959 7.04513 12.9688 7.04513C13.5771 7.04513 14 7.43334 14 7.98976C14 8.54619 13.5771 8.94302 12.9731 8.94302C11.7002 8.94302 10.4273 8.94733 9.15442 8.9387C8.98183 8.9387 8.94299 8.99046 8.94731 9.15437C8.95594 10.4484 8.95162 11.7424 8.95162 13.0364C8.95162 13.5109 8.61938 13.9034 8.16632 13.9854C7.73915 14.063 7.30766 13.8258 7.13076 13.4203C7.07035 13.278 7.04877 13.1313 7.05309 12.9803C7.05309 11.7079 7.04877 10.4354 7.0574 9.163C7.0574 8.97752 7.00563 8.94302 6.83303 8.94302C5.54721 8.95164 4.25706 8.94733 2.97124 8.94733C2.4664 8.94733 2.05218 8.58501 2.00471 8.11054C1.95725 7.61018 2.27223 7.17022 2.77276 7.07101C2.86337 7.05376 2.95829 7.05376 3.05322 7.05376C4.31747 7.05376 5.58604 7.04945 6.85029 7.05807C7.02288 7.05807 7.06172 7.00631 7.0574 6.8424C7.04877 5.54839 7.05309 4.25438 7.05309 2.96037C7.05309 2.49883 7.35081 2.12788 7.79524 2.02436C8.20515 1.92516 8.64958 2.13651 8.84375 2.5204C8.92142 2.67137 8.95162 2.83096 8.95162 2.99919C8.94731 3.62463 8.95162 4.25869 8.95162 4.88844Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="plans__plus-item-text">Отслеживание и установка любых обновлений с адаптацией под конфигурацию заказчика;</p>
+                  </div>
+                  <div class="plans__plus-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8.95162 4.88844C8.95162 5.54408 8.95594 6.1954 8.94731 6.85103C8.94299 7.01494 8.99046 7.04945 9.15011 7.04945C10.423 7.04082 11.6959 7.04513 12.9688 7.04513C13.5771 7.04513 14 7.43334 14 7.98976C14 8.54619 13.5771 8.94302 12.9731 8.94302C11.7002 8.94302 10.4273 8.94733 9.15442 8.9387C8.98183 8.9387 8.94299 8.99046 8.94731 9.15437C8.95594 10.4484 8.95162 11.7424 8.95162 13.0364C8.95162 13.5109 8.61938 13.9034 8.16632 13.9854C7.73915 14.063 7.30766 13.8258 7.13076 13.4203C7.07035 13.278 7.04877 13.1313 7.05309 12.9803C7.05309 11.7079 7.04877 10.4354 7.0574 9.163C7.0574 8.97752 7.00563 8.94302 6.83303 8.94302C5.54721 8.95164 4.25706 8.94733 2.97124 8.94733C2.4664 8.94733 2.05218 8.58501 2.00471 8.11054C1.95725 7.61018 2.27223 7.17022 2.77276 7.07101C2.86337 7.05376 2.95829 7.05376 3.05322 7.05376C4.31747 7.05376 5.58604 7.04945 6.85029 7.05807C7.02288 7.05807 7.06172 7.00631 7.0574 6.8424C7.04877 5.54839 7.05309 4.25438 7.05309 2.96037C7.05309 2.49883 7.35081 2.12788 7.79524 2.02436C8.20515 1.92516 8.64958 2.13651 8.84375 2.5204C8.92142 2.67137 8.95162 2.83096 8.95162 2.99919C8.94731 3.62463 8.95162 4.25869 8.95162 4.88844Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="plans__plus-item-text">Мониторинг срока действия лицензий, домена, хостинга, SSL-сертификата;</p>
+                  </div>
+                  <div class="plans__plus-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8.95162 4.88844C8.95162 5.54408 8.95594 6.1954 8.94731 6.85103C8.94299 7.01494 8.99046 7.04945 9.15011 7.04945C10.423 7.04082 11.6959 7.04513 12.9688 7.04513C13.5771 7.04513 14 7.43334 14 7.98976C14 8.54619 13.5771 8.94302 12.9731 8.94302C11.7002 8.94302 10.4273 8.94733 9.15442 8.9387C8.98183 8.9387 8.94299 8.99046 8.94731 9.15437C8.95594 10.4484 8.95162 11.7424 8.95162 13.0364C8.95162 13.5109 8.61938 13.9034 8.16632 13.9854C7.73915 14.063 7.30766 13.8258 7.13076 13.4203C7.07035 13.278 7.04877 13.1313 7.05309 12.9803C7.05309 11.7079 7.04877 10.4354 7.0574 9.163C7.0574 8.97752 7.00563 8.94302 6.83303 8.94302C5.54721 8.95164 4.25706 8.94733 2.97124 8.94733C2.4664 8.94733 2.05218 8.58501 2.00471 8.11054C1.95725 7.61018 2.27223 7.17022 2.77276 7.07101C2.86337 7.05376 2.95829 7.05376 3.05322 7.05376C4.31747 7.05376 5.58604 7.04945 6.85029 7.05807C7.02288 7.05807 7.06172 7.00631 7.0574 6.8424C7.04877 5.54839 7.05309 4.25438 7.05309 2.96037C7.05309 2.49883 7.35081 2.12788 7.79524 2.02436C8.20515 1.92516 8.64958 2.13651 8.84375 2.5204C8.92142 2.67137 8.95162 2.83096 8.95162 2.99919C8.94731 3.62463 8.95162 4.25869 8.95162 4.88844Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="plans__plus-item-text">Ведение документации по системе Битрикс24, с отражением ключевых моментов функционирования, а также всех внесенных доработок и изменений конфигурации;</p>
+                  </div>
+              </div>
+
+              
+              </div>
+              <div class="plans__price-wrapper">
+                <p class="plans__price">Индивидуально</p>
+                <div class="plans__order-wrapper">
+                  <p class="plans__order">Заказать</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="why__price-wrapper">
+            <div class="why__static-block">
+              <h4 class="why__price">Стоимость почасовой технической поддержки</h4>
+              <div class="why__hours-wrapper">
+                <p class="why__hours">5 <span class="why__hours-high">часов</span></p>
+                <p class="why__hours">10 <span class="why__hours-high">часов</span></p>
+                <p class="why__hours">30 <span class="why__hours-high">часов</span></p>
+                <p class="why__hours">50+ <span class="why__hours-high">часов</span></p>
+              </div>
+              <div class="why__hours-red-wrapper">
+                <p class="why__hours-red">3 300 ₽/час</p>
+                <p class="why__hours-red">3 100 ₽/час</p>
+                <p class="why__hours-red">2 800 ₽/час</p>
+                <p class="why__hours-red">2 600 ₽/час</p>
+              </div>
+              <div class="why__hours-wrapper-mobile">
+                <div class="hours__mobile-wrapper black">
+                  <p class="why__hours">5 <span class="why__hours-high">часов</span></p>
+                  <p class="why__hours">10 <span class="why__hours-high">часов</span></p>
+                </div>
+                <div class="hours__mobile-wrapper red">
+                  <p class="why__hours-red">3 300 ₽/час</p>
+                  <p class="why__hours-red">3 100 ₽/час</p>
+                </div>
+                <div class="hours__mobile-wrapper black">
+                  <p class="why__hours">30 <span class="why__hours-high">часов</span></p>
+                  <p class="why__hours">50+ <span class="why__hours-high">часов</span></p>
+                </div>
+                <div class="hours__mobile-wrapper red">
+                  <p class="why__hours-red">2 800 ₽/час</p>
+                  <p class="why__hours-red">2 600 ₽/час</p>
+                </div>
+              </div>
+              <h3 class="why__support">Часы техподдержки могут быть использованы на любые задачи, связанные с Битрикс24:</h3>
+              <div class="support__plus-wrapper">
+                <div class="support__plus-items">
+                  <div class="support__plus-item">
+                    <svg class="support__plus-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="support__plus-text">Восстановление Битрикс24, создание или развёртывание бэкапа;</p>
+                  </div>
+                  <div class="support__plus-item">
+                    <svg class="support__plus-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="support__plus-text">Обновление продукта, переход на новый тариф;</p>
+                  </div>
+                  <div class="support__plus-item">
+                    <svg class="support__plus-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="support__plus-text">Настройка стандартных модулей продукта;</p>
+                  </div>
+                  <div class="support__plus-item">
+                    <svg class="support__plus-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="support__plus-text">Запуск и настройка новых функций портала;</p>
+                  </div>
+                </div>
+                <div class="support__plus-items">
+                  <div class="support__plus-item">
+                    <svg class="support__plus-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="support__plus-text">Внедрение и интеграция Битрикс24 с продуктами 1С, почтой или телефонией, мессенджерами;</p>
+                  </div>
+                  <div class="support__plus-item">
+                    <svg class="support__plus-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="support__plus-text">Переезд на коробочную версию продукта.;</p>
+                  </div>
+                  <div class="support__plus-item">
+                    <svg class="support__plus-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.8969 4.69136C13.7978 4.2963 13.4013 4.09877 13.0049 4C12.7076 4 12.4103 4.09877 12.1129 4.39506C11.5183 4.98765 10.9237 5.58025 10.2299 6.17284C9.13973 7.25926 8.04955 8.34568 6.86027 9.4321C6.76116 9.53086 6.66205 9.53086 6.56295 9.4321C5.8692 8.74074 5.17545 8.04938 4.5808 7.45679C4.38259 7.16049 4.08527 6.96296 3.88705 6.66667C3.58973 6.46914 3.39152 6.37037 2.99509 6.37037C2.69777 6.37037 2.30134 6.5679 2.10312 6.96296C1.90491 7.35802 2.00402 7.85185 2.30134 8.14815L3.39152 9.23457C4.18437 10.0247 4.97723 10.8148 5.77009 11.6049C6.16652 11.9012 6.46384 12 6.76116 12C7.05848 12 7.3558 11.9012 7.65312 11.6049L10.329 8.93827C11.1219 8.24691 11.8156 7.45679 12.6085 6.76543L13.6987 5.77778C13.996 5.48148 14.0951 5.08642 13.8969 4.69136Z" fill="#D7171F"/>
+                    </svg>
+                    <p class="support__plus-text">Обучение сотрудников.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="minimum__wrapper">
+              <div class="minimum__item">
+                <p class="minimum__title">Минимальный пакет — 5 часов.</p>
+                <p class="minimum__text">Пакет действителен в течение 30 рабочих дней. Чем больше часов в пакете, тем ниже почасовая ставка.</p>
+                <div class="minimum__order-btn">
+                  <p class="minimum__order">Заказать</p>
+                  <svg class="minimum__order-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+    </main>
+
+    <section class="contact__wrapper">
+      <div class="contact">
+        <h2 class="contact__title">Готовы начать сотрудничество?</h2>
+        <p class="contact__text">Запишитесь на бесплатную онлайн-демонстрацию по порталу Битрикс24 у наших специалистов</p>
+        <div class="contact__btn-wrapper">
+          <a href="#" class="contact__btn">Записаться на демонстрацию</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div id="popup__open" class="footer__phone-wrapper">
+          <p class="footer__phone">+7 4212 79-90-00</p>
+          <div class="footer__support-wrapper">
+            <p class="footer__free-support">Бесплатная консультация</p>
+            <svg class="footer__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
+            </svg>
+          </div>
+        </div>
+        <div class="footer__links-wrapper">
+          <div class="footer__first-wrapper">
+            <div class="footer__logo-wrapper">
+              <a href="#"><img class="footer__logo" src="img/anit-logo.svg"></a>
+              <p class="footer__slogan">Внедрение и сопровождение Битрикс24</p>
+            </div>
+            <div class="footer__politics-wrapper">
+              <p class="footer__date">© ООО «АНИТ», 2023</p>
+              <a class="footer__politics" href="#">Политика конфиденциальности</a>
+            </div>
+          </div>
+          <div class="footer__items">
+            <p class="footer__title first">Услуги</p>
+            <div class="footer__second-wrapper">
+              <div class="footer__start-wrapper">
+                <p class="footer__link first">Стартовое внедрение</p>
+                <div class="footer__free-wrapper">
+                  <a href="#" class="footer__link">Аудит</a>
+                  <a href="#" class="footer__free">free</a>
+                </div>
+              </div>
+              <div class="footer__following-wrapper">
+                <a href="#" class="footer__link">Сопровождение</a>
+                <div class="footer__free-wrapper">
+                  <a href="#" class="footer__link">Демонстрация</a>
+                  <p class="footer__free">free</p>
+                </div>
+              </div>
+            </div>
+            <div class="footer__third-wrapper">
+              <div class="footer__buy-wrapper">
+                <p class="footer__title">Купить Битрикс24</p>
+                <p class="footer__title">Компания</p>
+              </div>
+              <div class="footer__cases-wrapper">
+                <a href="#" class="footer__link">Облачная версия</a>
+                <a href="#" class="footer__link">Кейсы</a>
+              </div>
+              <div class="footer__version-wrapper">
+                <a href="box-version.html" class="footer__link">Коробочная версия</a>
+                <a href="#" class="footer__link">Блог</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__date-mobile-wrapper">
+            <p class="footer__date">© ООО «АНИТ», 2023</p>
+            <a class="footer__politics" href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="popup__support" class="popup__support">
+      <div class="popup__support__body">
+        <div class="popup__support__content">
+          <div class="popup__image-wrapper">
+            <img id="support__close" class="popup__support__close-img" src="img/icons/crest.png">
+          </div>
+          <div class="popup__support__text-wrapper">
+            <h2 class="popup__title">Получить консультацию</h2>
+            <form class="popup__form" action="">
+              <div class="popup__name-wrapper">
+                <input class="popup__name" type="text" placeholder="Представьтесь" required>
+                <img class="star__name" src="img/icons/red-star.png">
+              </div>
+              <div class="popup__phone-wrapper">
+                <input class="popup__phone" type="tel" placeholder="Телефон" required>
+                <img class="star__phone" src="img/icons/red-star.png">
+              </div>
+              <div class="popup__checkbox-wrapper"> 
+                <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes" required>
+                <label for="happy">Я даю согласие на обработку персональных данных.</label>
+              </div>
+              <div class="popup__send-wrapper">
+                <input class="send__btn" type="submit" value="Отправить">
+                <svg class="popup__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="#fff"/>
+                </svg>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="popup__burger" class="popup__burger">
+      <div class="popup__burger__body">
+        <div class="popup__burger__content">
+          <div class="popup__burger__text-wrapper">
+            <a href="#" class="burger__item">Стартовое внедрение</a>
+            <a href="#" class="burger__item">Сопровождение</a>
+            <div class="burger__dropdown-wrapper">
+              <div class="burger__arrow-wrapper">
+                <a href="#" class="burger__item">Купить лицензию</a>
+                <svg class="burger__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                  <path d="M10.9425 5.5L4.05746 5.5C3.22303 5.5 2.75561 6.46169 3.27114 7.11782L6.71368 11.4992C7.11406 12.0088 7.88594 12.0088 8.28632 11.4992L11.7289 7.11782C12.2444 6.46169 11.777 5.5 10.9425 5.5Z" fill="#081A32"/>
+                </svg>
+              </div>
+              <ul class="burger__dropdown">
+                <li class="burger__dropdown-item"><a href="box-version.html">Коробочная версия</a></li>
+                <li class="burger__dropdown-item"><a href="#">Облачная версия</a></li>
+              </ul>
+            </div>
+            <div class="burger__free-wrapper">
+              <a href="#" class="burger__item">Аудит</a>
+              <p class="burger__free">free</p>
+            </div>
+            <div class="burger__free-wrapper">
+              <a href="#" class="burger__item">Демонстрация</a> 
+              <p class="burger__free">free</p>
+            </div>
+            <a href="cases.html" class="burger__item active">Кейсы</a>
+            <a href="blog.html" class="burger__item">Блог</a>
+            <p class="burger__phone">+7 4212 79-90-00</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
