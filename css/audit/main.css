@@ -95,15 +95,44 @@ main {
   transition: all .3s ease;
   cursor: pointer;
 }
-.cloud__btn-wrapper:hover {
-  background-color: #ECF1F6;
+
+.cloud__btn-wrapper {
+  transition: all 0.3s;
+  position: relative;
 }
-.cloud__btn-wrapper:hover .cloud__btn,
-.cloud__btn-wrapper:hover .cloud__arrow path {
+.cloud__btn-wrapper::before,
+.cloud__btn-wrapper::after {
+  transition: all 0.3s;
+  background: #fff;
+  border-radius: 32px;
+  content: '';
+  display: flex;
+  position: absolute;
+  z-index: 0;
+}
+
+.cloud__btn-wrapper::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.cloud__btn-wrapper:hover:after {
+  height: 100%;
+}
+.cloud__btn-wrapper:hover .cloud__btn {
   color: #081A32;
+}
+.cloud__btn-wrapper:hover svg path {
   fill: #081A32;
 }
+.cloud__arrow {
+  position: relative;
+  z-index: 3;
+}
 .cloud__btn {
+  position: relative;
+  z-index: 3;
   color: #FFF;
   font-size: 18px;
   font-style: normal;
@@ -285,6 +314,7 @@ main {
 
 .why {
   background-color: #FFF;
+  position: relative;
 }
 .why__wrapper {
   max-width: 1280px;
@@ -472,17 +502,20 @@ main {
   flex-shrink: 0;
 }
 .minimum__wrapper {
-  border-radius: 32px;
-  background: #FFF;
-  padding: 32px;
-  height: 340px;
-  height: 280px;
+  width: 340px;
+  height: 100%;
   position: relative;
 }
-/* .minimum__item {
+.minimum__item {
+
+  padding: 32px;
+  background: #FFF;
+  border-radius: 32px;
+  width: 340px;
+  height: 280px;
   position: sticky;
   top: 100px;
-} */
+}
 .minimum__title,
 .minimum__text {
   color: var(--black, #081A32);
@@ -729,7 +762,7 @@ main {
     width: 720px;
     height: 817px;
   }
-  .minimum__wrapper {
+  .minimum__item {
     padding: 24px;
     width: 207px;
     height: 303px;
@@ -960,7 +993,7 @@ main {
     display: flex;
     flex-direction: column;
   }
-  .minimum__wrapper {
+  .minimum__item{
     width: 100%;
     height: 263px;
   }

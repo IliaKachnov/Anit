@@ -102,6 +102,45 @@ main {
   transition: all .3s ease;
   cursor: pointer;
 }
+
+.cloud__btn-wrapper {
+  transition: all 0.3s;
+  position: relative;
+}
+.cloud__btn-wrapper::before,
+.cloud__btn-wrapper::after {
+  transition: all 0.3s;
+  background: #fff;
+  border-radius: 32px;
+  content: '';
+  display: flex;
+  position: absolute;
+  z-index: 0;
+}
+
+.cloud__btn-wrapper::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.cloud__btn-wrapper:hover:after {
+  height: 100%;
+}
+.cloud__btn-wrapper:hover .cloud__btn {
+  color: #081A32;
+}
+.cloud__btn-wrapper:hover svg path {
+  fill: #081A32;
+}
+.cloud__arrow {
+  position: relative;
+  z-index: 2;
+}
+.cloud__btn {
+  position: relative;
+  z-index: 2;
+}
 .cloud__download {
   padding: 20px 24px;
   display: flex;
@@ -119,19 +158,18 @@ main {
   font-weight: 600;
   line-height: 110%; /* 19.8px */
 }
-.cloud__download:hover:hover,
-.cloud__btn-wrapper:hover {
+.cloud__download:hover:hover {
   background-color: #ECF1F6;
 }
 
 .cloud__download:hover .cloud__demo,
-.cloud__download:hover .cloud__arrow path,
-.cloud__btn-wrapper:hover .cloud__btn,
-.cloud__btn-wrapper:hover .cloud__arrow path {
+.cloud__download:hover .cloud__arrow path{
   color: #081A32;
   fill: #081A32;
 }
 .cloud__btn {
+  position: relative;
+  z-index: 3;
   color: #FFF;
   font-size: 18px;
   font-style: normal;

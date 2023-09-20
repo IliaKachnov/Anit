@@ -34,7 +34,7 @@ dropdownWrapper.addEventListener('click', () => {
 
 
 const openSupportModals = document.querySelectorAll('#popup__open');
-const closeSupportModal = document.getElementById('support__close');
+const closeSupportModals = document.querySelectorAll('#support__close');
 const modalSupport = document.querySelector('.popup__support');  
 
 openSupportModals.forEach((openSupportModal) => {
@@ -44,10 +44,12 @@ openSupportModals.forEach((openSupportModal) => {
   });
 });
 
-closeSupportModal.addEventListener('click', () => {
-  modalSupport.classList.remove('open')
-  document.body.style.overflow = 'visible';
-});
+closeSupportModals.forEach((closeSupportModal) => {
+  closeSupportModal.addEventListener('click', () => {
+    modalSupport.classList.remove('open')
+    document.body.style.overflow = 'visible';
+  });
+})
 
 
 const imageElement = document.getElementById("burger");

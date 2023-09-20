@@ -105,26 +105,52 @@ main {
   transition: all .3s ease;
   cursor: pointer;
 }
-.cloud__btn-wrapper:hover {
-  background-color: #ECF1F6;
+.cloud__btn-wrapper  {
+  transition: all 0.3s;
+  position: relative;
 }
-.cloud__btn-wrapper:hover .cloud__btn,
+.cloud__btn-wrapper::before,
+.cloud__btn-wrapper::after {
+  transition: all 0.3s;
+  background: #fff;
+  border-radius: 32px;
+  content: '';
+  display: flex;
+  position: absolute;
+  z-index: 0;
+}
+
+.cloud__btn-wrapper::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.cloud__btn-wrapper:hover:after {
+  height: 100%;
+}
+.cloud__btn-wrapper:hover .cloud__btn {
+  color: #081A32;
+}
+.cloud-btn-wrapper:hover svg path {
+  fill: #081A32;
+}
 .cloud__btn-wrapper:hover .cloud__arrow path {
   color: #081A32;
   fill: #081A32;
 }
+.cloud__arrow path {
+  position: relative;
+  z-index: 2;
+}
 .cloud__btn {
+  position: relative;
+  z-index: 2;
   color: #FFF;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 110%; /* 19.8px */
-}
-.cloud__arrow {
-}
-.cloud__wave-wrapper {
-}
-.cloud__wave-img {
 }
 .cloud__help {
   color: var(--black, #081A32);
@@ -159,7 +185,6 @@ main {
 }
 .scroll__text {
   color: var(--black, #081A32);
-  font-family: Panton;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -783,16 +808,15 @@ main {
   background: var(--red, #D7171F);
   transition: all .2s ease;
 }
-.contact__btn-wrapper:hover {
-  background: var(--bg, #ECF1F6);
-}
-.contact__btn-wrapper:hover .contact__btn {
-  color: var(--black, #081A32);
-}
-.contact__btn-wrapper:hover svg path {
-  fill: #081A32;
+
+
+.follow__become-svg {
+  position: relative;
+  z-index: 3;
 }
 .contact__btn {
+  position: relative;
+  z-index: 3;
   color: #FFF;
   font-size: 18px;
   font-style: normal;

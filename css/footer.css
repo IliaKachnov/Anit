@@ -266,6 +266,9 @@
     margin-top: 32px;
     width: 320px;
   }
+  .footer__first-wrapper {
+    justify-content: start;
+  }
   .footer__logo-wrapper {
     width: 320px;
     margin: 0 auto;

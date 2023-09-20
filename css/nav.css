@@ -180,12 +180,44 @@
   background: var(--bg, #ECF1F6);
   
 }
+.nav__support {
+  transition: all 0.3s;
+  position: relative;
+}
+.nav__support::before,
+.nav__support::after {
+  transition: all 0.3s;
+  background: #fff;
+  border-radius: 32px;
+  content: '';
+  display: flex;
+  position: absolute;
+  z-index: 0;
+}
+
+.nav__support::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.nav__support:hover:after {
+  height: 100%;
+}
+.nav__support:hover .screen__price {
+  color: #081A32;
+}
+.nav__support:hover svg path {
+  fill: #081A32;
+}
 .nav__support:hover .nav__support-title,
 .nav__support:hover svg.nav__white-arrow path {
   color: #081A32;
   fill: #081A32;
 }
 .nav__support-title {
+  position: relative;
+  z-index: 2;
   color: #FFF;
   font-size: 18px;
   font-style: normal;
@@ -194,6 +226,8 @@
   cursor: pointer;
 }
 .nav__white-arrow {
+  position: relative;
+  z-index: 2;
   width: 16px;
   height: 16px;
 }

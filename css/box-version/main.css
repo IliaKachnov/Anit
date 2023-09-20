@@ -87,15 +87,13 @@ main {
   border-radius: 32px;
   background: var(--black, #081A32);
 }
-.btn__wrapper.plan:hover,
 .btn__wrapper.help:hover {
   background: var(--bg, #ECF1F6);
 }
-.btn__wrapper.plan:hover .btn__plan,
+
 .btn__wrapper.help:hover .btn__plan  {
   color: #081A32;
 }
-.btn__wrapper.plan:hover .btn__arrow path,
 .btn__wrapper.help:hover .btn__arrow path {
   fill: #081A32;
 }
@@ -104,6 +102,45 @@ main {
   height: 60px;
   border-radius: 32px;
   background: var(--red, #D7171F);
+}
+
+.btn__wrapper.plan {
+  transition: all 0.3s;
+  position: relative;
+}
+.btn__wrapper.plan::before,
+.btn__wrapper.plan::after {
+  transition: all 0.3s;
+  background: #fff;
+  border-radius: 32px;
+  content: '';
+  display: flex;
+  position: absolute;
+  z-index: 0;
+}
+
+.btn__wrapper.plan::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.btn__wrapper.plan:hover:after {
+  height: 100%;
+}
+.btn__wrapper.plan:hover .btn__plan {
+  color: #081A32;
+}
+.btn__wrapper.plan:hover .btn__arrow path {
+  fill: #081A32;
+}
+.btn__arrow {
+  position: relative;
+  z-index: 2;
+}
+.btn__plan {
+  position: relative;
+  z-index: 2;
 }
 .btn__plan {
   color: #FFF;

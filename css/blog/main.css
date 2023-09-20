@@ -20,6 +20,13 @@ main {
   font-style: normal;
   font-weight: 600;
   line-height: 100%; /* 80px */
+  transition:  1.5s ease all;
+  opacity: 0;
+  transform: translateX(-600px);
+}
+.blogs__title.active {
+  opacity: 1;
+  transform: translateX(0);
 }
 .blogs__filters {
   height: 48px;

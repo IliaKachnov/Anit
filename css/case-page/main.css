@@ -49,6 +49,13 @@ main {
   font-style: normal;
   font-weight: 600;
   line-height: 100%; /* 80px */
+  transition: all 1.5s ease;
+  transform: translateX(-800px);
+}
+
+.case__title.active {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .case__nav-wrapper {

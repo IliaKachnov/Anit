@@ -40,38 +40,6 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 
-// const reviewItems = document.querySelectorAll('.review__item');
-// let currentIndex = 0;
-
-// function showReview(index) {
-//     reviewItems.forEach((item, i) => {
-//         if (i === index) {
-//             item.classList.add('active'); // Добавьте класс 'active'
-//         } else {
-//             item.classList.remove('active'); // Удалите класс 'active' для скрытых элементов
-//         }
-//     });
-// }
-
-// function nextReview() {
-//     currentIndex = (currentIndex + 1) % reviewItems.length;
-//     showReview(currentIndex);
-// }
-
-// function prevReview() {
-//     currentIndex = (currentIndex - 1 + reviewItems.length) % reviewItems.length;
-//     showReview(currentIndex);
-// }
-
-// const nextButton = document.querySelector('.review__pagination-next');
-// const prevButton = document.querySelector('.review__pagination-prev');
-
-// nextButton.addEventListener('click', nextReview);
-// prevButton.addEventListener('click', prevReview);
-
-// // Показать первый review__item при загрузке страницы
-// showReview(currentIndex);
-
 
 const btnNextFirst = document.querySelector('#next-first');
 const prevBtnSecond = document.querySelector('#prev-btn-second');
@@ -102,3 +70,11 @@ prevBtnThird.addEventListener('click', () => {
   reviewItemSecond.classList.remove('hide');
   reviewItemThird.classList.add('hide');
 })
+
+
+ const screenTitle = document.querySelector('.screen__title');
+
+
+ document.addEventListener('DOMContentLoaded', () => {
+  screenTitle.classList.add('active')
+ })
