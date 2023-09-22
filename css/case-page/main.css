@@ -10,6 +10,8 @@ main {
   border-bottom-left-radius: 32px; 
   border-bottom-right-radius: 32px;
   background-color: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 /* INTRO */
@@ -184,16 +186,10 @@ main {
 .accordion__wrapper {
   margin-top: 8px;
 }
-.accordion {
-}
 .accordion__title-wrapper {
   display: flex;
   align-items: center;
   gap: 16px;
-}
-.accordion__arrow {
-}
-.panel {
 }
 .faq__item.last {
   margin-top: 8px;
@@ -371,30 +367,41 @@ main {
   width: 100%;
   height: 570px;
   position: relative;
+  border-radius: 32px;
 }
 .swiper {
   width: 100%;
   height: 100%;
   border-radius: 32px;
 }
-
-.swiper-slide {
-  height: 450px;
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.swiper-wrapper {
   border-radius: 32px;
 }
 
-.swiper-slide img {
-  display: block;
+.swiper-slide {
+  height: 450px;
+  border-radius: 32px;
+  padding-right: 16px;
+}
+.swiper-slide-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+  border-radius: 32px;
+}
+.swiper-slide-img-wrapper img {
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 32px;
   width: 100%;
   height: 450px;
   object-fit: cover;
   border-radius: 32px;
+  transition: .8s ease all;
+}
+.swiper-slide-img-wrapper:hover img {
+  transform: scale(1.1);
 }
 .swiper-pagination-progressbar  {
   position: absolute !important;
@@ -559,7 +566,7 @@ main {
   margin-bottom: -260px;
   margin-top: -27px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 .contact {
   margin-top: 180px;

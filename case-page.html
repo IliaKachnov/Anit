@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,8 +24,10 @@
           <a class="nav__link" href="index.html">Стартовое внедрение</a>
           <a class="nav__link" href="follow.html">Сопровождение</a>
           <div class="dropdown__wrapper">
-            <p class="nav__link">Купить лицензию</з>
-            <img class="nav__black-arrow" src="img/icons/arrow.svg">
+            <p class="nav__link">Купить лицензию</p>
+            <svg class="nav__black-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M10.9425 5L4.05746 5C3.22303 5 2.75561 5.96169 3.27114 6.61782L6.71368 10.9992C7.11406 11.5088 7.88594 11.5088 8.28632 10.9992L11.7289 6.61782C12.2444 5.96169 11.777 5 10.9425 5Z" fill="#081A32"/>
+            </svg>
             <ul class="nav__dropdown">
               <a href="cloud-version.html"><li class="nav__dropdown-item">Облачная версия</li></a>
               <a href="box-version.html"><li class="nav__dropdown-item">Коробочная версия</li></a>
@@ -71,7 +73,10 @@
             <p class="case__back-title">К списку кейсов</p>
           </a>
         </div>
-        <h1 class="case__title">Подарочная акция фирмы «1С» — «Зима подарков 1С:ИТС»</h1>
+        <h1 class="case__title">
+          Подарочная акция фирмы «1С» —
+          «Зима подарков 1С:ИТС»
+          </h1>
         <div class="case__nav-wrapper">
           <p class="case__nav-service">Обслуживание 1С</p>
           <p class="case__nav-date">16 мая 2023</p>
@@ -210,19 +215,29 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="img/case-page-laptop.png">
+             <div class="swiper-slide-img-wrapper">
+               <img src="img/case-page-laptop.png">
+            </div>
             </div>
             <div class="swiper-slide">
-              <img src="img/case-page-laptop.png">
+              <div class="swiper-slide-img-wrapper">
+                <img src="img/case-page-laptop.png">
+              </div>
             </div>
             <div class="swiper-slide">
-              <img src="img/case-page-laptop.png">
+              <div class="swiper-slide-img-wrapper">
+                <img src="img/case-page-laptop.png">
+              </div>
             </div>
             <div class="swiper-slide">
-              <img src="img/case-page-laptop.png">
+              <div class="swiper-slide-img-wrapper">
+                <img src="img/case-page-laptop.png">
+              </div>
             </div>
             <div class="swiper-slide">
-              <img src="img/case-page-laptop.png">
+              <div class="swiper-slide-img-wrapper">
+                <img src="img/case-page-laptop.png">
+              </div>
             </div>
           </div>
           <div class="swiper-button-next">
@@ -347,14 +362,14 @@
               <div class="footer__start-wrapper">
                 <p class="footer__link first">Стартовое внедрение</p>
                 <div class="footer__free-wrapper">
-                  <a href="#" class="footer__link">Аудит</a>
+                  <a href="audit.html" class="footer__link">Аудит</a>
                   <a href="#" class="footer__free">free</a>
                 </div>
               </div>
               <div class="footer__following-wrapper">
-                <a href="#" class="footer__link">Сопровождение</a>
+                <a href="follow.html" class="footer__link">Сопровождение</a>
                 <div class="footer__free-wrapper">
-                  <a href="#" class="footer__link">Демонстрация</a>
+                  <a href="demo.html" class="footer__link">Демонстрация</a>
                   <p class="footer__free">free</p>
                 </div>
               </div>
@@ -365,12 +380,12 @@
                 <p class="footer__title">Компания</p>
               </div>
               <div class="footer__cases-wrapper">
-                <a href="#" class="footer__link">Облачная версия</a>
-                <a href="#" class="footer__link">Кейсы</a>
+                <a href="cloud-version.html" class="footer__link">Облачная версия</a>
+                <a href="cases.html" class="footer__link">Кейсы</a>
               </div>
               <div class="footer__version-wrapper">
                 <a href="box-version.html" class="footer__link">Коробочная версия</a>
-                <a href="#" class="footer__link">Блог</a>
+                <a href="blog.html" class="footer__link">Блог</a>
               </div>
             </div>
           </div>
@@ -393,15 +408,17 @@
             <h2 class="popup__title">Получить консультацию</h2>
             <form class="popup__form" action="">
               <div class="popup__name-wrapper">
-                <input class="popup__name" type="text" placeholder="Представьтесь" required>
+                <input id="name"  class="popup__name" type="text" placeholder="Представьтесь">
                 <img class="star__name" src="img/icons/red-star.png">
+                <label class="label__name" for="name">Заполните поле</label>
               </div>
               <div class="popup__phone-wrapper">
-                <input class="popup__phone" type="tel" placeholder="Телефон" required>
+                <input id="phone" class="popup__phone" type="tel" placeholder="Телефон">
                 <img class="star__phone" src="img/icons/red-star.png">
+                <label class="label__phone" for="phone">Заполните поле</label>
               </div>
               <div class="popup__checkbox-wrapper"> 
-                <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes" required>
+                <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
                 <label for="happy">Я даю согласие на обработку персональных данных.</label>
               </div>
               <div class="popup__send-wrapper">
@@ -420,8 +437,8 @@
       <div class="popup__burger__body">
         <div class="popup__burger__content">
           <div class="popup__burger__text-wrapper">
-            <a href="#" class="burger__item">Стартовое внедрение</a>
-            <a href="#" class="burger__item">Сопровождение</a>
+            <a href="index.html" class="burger__item">Стартовое внедрение</a>
+            <a href="follow.html" class="burger__item">Сопровождение</a>
             <div class="burger__dropdown-wrapper">
               <div class="burger__arrow-wrapper">
                 <a href="#" class="burger__item">Купить лицензию</a>
@@ -431,18 +448,18 @@
               </div>
               <ul class="burger__dropdown">
                 <li class="burger__dropdown-item"><a href="box-version.html">Коробочная версия</a></li>
-                <li class="burger__dropdown-item"><a href="#">Облачная версия</a></li>
+                <li class="burger__dropdown-item"><a href="cloud-version.html">Облачная версия</a></li>
               </ul>
             </div>
             <div class="burger__free-wrapper">
-              <a href="#" class="burger__item">Аудит</a>
+              <a href="audit.html" class="burger__item">Аудит</a>
               <p class="burger__free">free</p>
             </div>
             <div class="burger__free-wrapper">
-              <a href="#" class="burger__item">Демонстрация</a> 
+              <a href="demo.html" class="burger__item">Демонстрация</a> 
               <p class="burger__free">free</p>
             </div>
-            <a href="cases.html" class="burger__item active">Кейсы</a>
+            <a href="cases.html" class="burger__item">Кейсы</a>
             <a href="blog.html" class="burger__item">Блог</a>
             <p class="burger__phone">+7 4212 79-90-00</p>
             </div>

@@ -14,8 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
               nav.classList.remove("active");
           }
       }
-
-      // Проверяем, доскроллил ли пользователь до самого вверха
       if (currentScrollTop === 0) {
           isScrollingUp = true;
       }
@@ -34,7 +32,7 @@ dropdownWrapper.addEventListener('click', () => {
 
 
 const openSupportModals = document.querySelectorAll('#popup__open');
-const closeSupportModal = document.getElementById('support__close');
+const closeSupportModals = document.querySelectorAll('#support__close');
 const modalSupport = document.querySelector('.popup__support');  
 
 openSupportModals.forEach((openSupportModal) => {
@@ -44,10 +42,41 @@ openSupportModals.forEach((openSupportModal) => {
   });
 });
 
-closeSupportModal.addEventListener('click', () => {
-  modalSupport.classList.remove('open')
-  document.body.style.overflow = 'visible';
-});
+closeSupportModals.forEach((closeSupportModal) => {
+  closeSupportModal.addEventListener('click', () => {
+    modalSupport.classList.remove('open')
+    document.body.style.overflow = 'visible';
+  });
+})
+
+const supportSubmitBtn = document.querySelector('.popup__form');
+const labelName = document.querySelector('.label__name');
+const labelphone = document.querySelector('.label__phone');
+const inputName = document.querySelector('.popup__name');
+const inputPhone = document.querySelector('.popup__phone');
+const customCheckbox = document.querySelector('.custom-checkbox');
+
+supportSubmitBtn.addEventListener('submit', (e) => {
+  const inputNameValue = inputName.value.trim();
+  const inputPhoneValue = inputPhone.value.trim();
+
+
+  if(inputNameValue === '' || inputPhoneValue === '' || !customCheckbox.checked) {
+    e.preventDefault();
+    if(inputNameValue === ''){
+      labelName.classList.add('hide');
+    }
+    if(!customCheckbox.checked) {
+      customCheckbox.classList.add('active')
+    }
+    if(inputPhoneValue === '') {
+      labelphone.classList.add('hide');
+    }
+  } else {
+    labelphone.classList.remove('hide');
+    labelName.classList.remove('hide');
+  }
+})
 
 
 const imageElement = document.getElementById("burger");

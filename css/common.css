@@ -17,9 +17,6 @@
 
 body {
   font-family: 'Panton';
-  scroll-behavior: smooth;
-  /* position: relative; */
-  /* z-index: -2; */
 }
 
 .wrapper {
@@ -27,8 +24,6 @@ body {
   overflow: clip;
   display: flex;
   flex-direction: column;
-  /* position: relative; */
-  /* z-index: -2; */
 }
 
 main {

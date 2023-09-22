@@ -10,6 +10,8 @@ main {
   border-bottom-left-radius: 32px; 
   border-bottom-right-radius: 32px;
   background-color: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 /* CLOUD */
@@ -99,22 +101,18 @@ main {
   background-color: #ECF1F6;
 }
 .cloud__btn-wrapper:hover .cloud__btn,
-.cloud__btn-wrapper:hover .cloud__arrow path {
+.cloud__btn-wrapper:hover svg path {
   color: #081A32;
   fill: #081A32;
 }
+
+
 .cloud__btn {
   color: #FFF;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 110%; /* 19.8px */
-}
-.cloud__arrow {
-}
-.cloud__wave-wrapper {
-}
-.cloud__wave-img {
 }
 .cloud__help {
   color: var(--black, #081A32);
@@ -285,6 +283,7 @@ main {
 
 .why {
   background-color: #FFF;
+  position: relative;
 }
 .why__wrapper {
   max-width: 1280px;
@@ -385,6 +384,7 @@ main {
 .why__price-wrapper {
   max-width: 1280px;
   width: 100%;
+  height: 593px;
   margin: 0 auto;
   border-radius: 32px;
   background: var(--bg, #ECF1F6);
@@ -472,17 +472,20 @@ main {
   flex-shrink: 0;
 }
 .minimum__wrapper {
-  border-radius: 32px;
-  background: #FFF;
-  padding: 32px;
-  height: 340px;
-  height: 280px;
+  width: 340px;
+  height: 100%;
   position: relative;
 }
-/* .minimum__item {
+.minimum__item {
+
+  padding: 32px;
+  background: #FFF;
+  border-radius: 32px;
+  width: 340px;
+  height: 280px;
   position: sticky;
   top: 100px;
-} */
+}
 .minimum__title,
 .minimum__text {
   color: var(--black, #081A32);
@@ -557,7 +560,7 @@ main {
   margin-bottom: -260px;
   margin-top: -27px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 .contact {
   margin-top: 180px;
@@ -729,7 +732,7 @@ main {
     width: 720px;
     height: 817px;
   }
-  .minimum__wrapper {
+  .minimum__item {
     padding: 24px;
     width: 207px;
     height: 303px;
@@ -960,7 +963,7 @@ main {
     display: flex;
     flex-direction: column;
   }
-  .minimum__wrapper {
+  .minimum__item{
     width: 100%;
     height: 263px;
   }

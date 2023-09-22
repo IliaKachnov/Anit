@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +23,9 @@
           <a class="nav__link" href="follow.html">Сопровождение</a>
           <div class="dropdown__wrapper">
             <p class="nav__link">Купить лицензию</з>
-            <img class="nav__black-arrow" src="img/icons/arrow.svg">
+              <svg class="nav__black-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M10.9425 5L4.05746 5C3.22303 5 2.75561 5.96169 3.27114 6.61782L6.71368 10.9992C7.11406 11.5088 7.88594 11.5088 8.28632 10.9992L11.7289 6.61782C12.2444 5.96169 11.777 5 10.9425 5Z" fill="#081A32"/>
+              </svg>
             <ul class="nav__dropdown">
               <a href="cloud-version.html"><li class="nav__dropdown-item">Облачная версия</li></a>
               <a href="box-version.html"><li class="nav__dropdown-item">Коробочная версия</li></a>
@@ -158,6 +160,7 @@
       <section class="demo">
         <div class="demo__wrapper">
           <div class="demo__title-wrapper">
+            <img class="demo__title-img" src="./img/demo-laptop-user.png">
             <p class="demo__title">Кому подойдет демонстрация</p>
           </div>
           <div class="demo__items">
@@ -234,6 +237,7 @@
           <h3 class="result__title">В результате демонстрации</h3>
           <div class="result__items">
             <div class="result__item first">
+              <img class="result__item-img" src="./img/demo-man-work.png">
               <div class="result__item-text-wrapper">
                 <p class="result__item-text">На конкретных примерах поймёте, как может работать ваш бизнес с помощью Битрикс24</p>
                 <div class="result__more-wrapper">
@@ -246,6 +250,7 @@
               
             </div>
             <div class="result__item second">
+              <img class="result__item-img"  src="./img/demo-watch.png">
               <div class="result__item-text-wrapper">
                 <p class="result__item-text">Поймёте, как тратить меньше времени на операционку и больше на развитие</p>
                 <div class="result__more-wrapper">
@@ -258,6 +263,7 @@
               
             </div>
             <div class="result__item third">
+              <img class="result__item-img"  src="./img/demo-deal.png" alt="">
               <div class="result__item-text-wrapper">
                 <p class="result__item-text">Поймёте, подходит под ваши задачи Битрикс24 или нет</p>
                 <div class="result__more-wrapper">
@@ -285,7 +291,7 @@
         <p class="contact__text">С вами свяжется наш специалист, задаст уточняющие вопросы, назначит время и запишет на демонстрацию..</p>
         <div class="contact__btn-wrapper">
           <a href="#" class="contact__btn">Записаться</a>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <svg class="follow__become-svf" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
           </svg>
         </div>
@@ -366,15 +372,17 @@
             <h2 class="popup__title">Получить консультацию</h2>
             <form class="popup__form" action="">
               <div class="popup__name-wrapper">
-                <input class="popup__name" type="text" placeholder="Представьтесь" required>
+                <input id="name"  class="popup__name" type="text" placeholder="Представьтесь">
                 <img class="star__name" src="img/icons/red-star.png">
+                <label class="label__name" for="name">Заполните поле</label>
               </div>
               <div class="popup__phone-wrapper">
-                <input class="popup__phone" type="tel" placeholder="Телефон" required>
+                <input id="phone" class="popup__phone" type="tel" placeholder="Телефон">
                 <img class="star__phone" src="img/icons/red-star.png">
+                <label class="label__phone" for="phone">Заполните поле</label>
               </div>
               <div class="popup__checkbox-wrapper"> 
-                <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes" required>
+                <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
                 <label for="happy">Я даю согласие на обработку персональных данных.</label>
               </div>
               <div class="popup__send-wrapper">
@@ -415,8 +423,8 @@
               <a href="#" class="burger__item">Демонстрация</a> 
               <p class="burger__free">free</p>
             </div>
-            <a href="cases.html" class="burger__item active">Кейсы</a>
-            <a href="blog.html" class="burger__item">Блог</a>
+            <a href="cases.html" class="burger__item">Кейсы</a>
+            <a href="blog.html" class="burger__item active">Блог</a>
             <p class="burger__phone">+7 4212 79-90-00</p>
             </div>
         </div>

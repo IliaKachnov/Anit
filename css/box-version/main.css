@@ -87,15 +87,13 @@ main {
   border-radius: 32px;
   background: var(--black, #081A32);
 }
-.btn__wrapper.plan:hover,
 .btn__wrapper.help:hover {
   background: var(--bg, #ECF1F6);
 }
-.btn__wrapper.plan:hover .btn__plan,
+
 .btn__wrapper.help:hover .btn__plan  {
   color: #081A32;
 }
-.btn__wrapper.plan:hover .btn__arrow path,
 .btn__wrapper.help:hover .btn__arrow path {
   fill: #081A32;
 }
@@ -104,6 +102,24 @@ main {
   height: 60px;
   border-radius: 32px;
   background: var(--red, #D7171F);
+}
+.btn__wrapper.plan:hover {
+  background-color: #ECF1F6;
+}
+.btn__wrapper.plan:hover svg path,
+.btn__wrapper.plan:hover .btn__plan {
+  color: #081A32;
+  fill: #081A32;
+}
+
+
+.btn__arrow {
+  position: relative;
+  z-index: 2;
+}
+.btn__plan {
+  position: relative;
+  z-index: 2;
 }
 .btn__plan {
   color: #FFF;
@@ -381,10 +397,10 @@ main {
   background: var(--red, #D7171F);
   transition:  all .2s ease;
 }
-/* .prices__order-wrapper:hover {
-  background: var(--bg, #ECF1F6);
+.prices__order-wrapper:hover {
+  background: #081A32;
 }
-.prices__order-wrapper:hover .order__arrow,
+/* .prices__order-wrapper:hover .order__arrow,
 .prices__order-wrapper:hover .order__title {
   fill: #081A32;
   color: #081A32;
@@ -403,8 +419,7 @@ main {
   font-weight: 600;
   line-height: 120%; /* 19.2px */
 }
-.order__arrow {
-}
+
 .prices__item-user-wrapper {
   display: flex;
   align-items: center;
@@ -438,7 +453,7 @@ main {
   margin-bottom: -260px;
   margin-top: -27px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 .rate {
   margin-top: 180px;

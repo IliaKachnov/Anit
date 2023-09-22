@@ -5,6 +5,8 @@
   background-size: cover;
   background-position: center;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 .footer__wrapper {
   max-width: 1920px;
@@ -265,6 +267,9 @@
     margin: 0 auto;
     margin-top: 32px;
     width: 320px;
+  }
+  .footer__first-wrapper {
+    justify-content: start;
   }
   .footer__logo-wrapper {
     width: 320px;

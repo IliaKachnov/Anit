@@ -77,7 +77,7 @@
             </div>
             <div class="cloud__make-wrapper">
               <div class="cloud__btn-wrapper">
-                <p class="cloud__btn">Записаться на консультацию</p>
+                <p id="popup__open" class="cloud__btn">Записаться на консультацию</p>
                 <svg class="cloud__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
                 </svg>
@@ -329,14 +329,14 @@
               <div class="footer__start-wrapper">
                 <p class="footer__link first">Стартовое внедрение</p>
                 <div class="footer__free-wrapper">
-                  <a href="#" class="footer__link">Аудит</a>
+                  <a href="audit.html" class="footer__link">Аудит</a>
                   <a href="#" class="footer__free">free</a>
                 </div>
               </div>
               <div class="footer__following-wrapper">
-                <a href="#" class="footer__link">Сопровождение</a>
+                <a href="follow.html" class="footer__link">Сопровождение</a>
                 <div class="footer__free-wrapper">
-                  <a href="#" class="footer__link">Демонстрация</a>
+                  <a href="demo.html" class="footer__link">Демонстрация</a>
                   <p class="footer__free">free</p>
                 </div>
               </div>
@@ -347,12 +347,12 @@
                 <p class="footer__title">Компания</p>
               </div>
               <div class="footer__cases-wrapper">
-                <a href="#" class="footer__link">Облачная версия</a>
-                <a href="#" class="footer__link">Кейсы</a>
+                <a href="cloud-version.html" class="footer__link">Облачная версия</a>
+                <a href="cases.html" class="footer__link">Кейсы</a>
               </div>
               <div class="footer__version-wrapper">
                 <a href="box-version.html" class="footer__link">Коробочная версия</a>
-                <a href="#" class="footer__link">Блог</a>
+                <a href="blog.html" class="footer__link">Блог</a>
               </div>
             </div>
           </div>
@@ -375,15 +375,17 @@
             <h2 class="popup__title">Получить консультацию</h2>
             <form class="popup__form" action="">
               <div class="popup__name-wrapper">
-                <input class="popup__name" type="text" placeholder="Представьтесь" required>
+                <input id="name"  class="popup__name" type="text" placeholder="Представьтесь">
                 <img class="star__name" src="img/icons/red-star.png">
+                <label class="label__name" for="name">Заполните поле</label>
               </div>
               <div class="popup__phone-wrapper">
-                <input class="popup__phone" type="tel" placeholder="Телефон" required>
+                <input id="phone" class="popup__phone" type="tel" placeholder="Телефон">
                 <img class="star__phone" src="img/icons/red-star.png">
+                <label class="label__phone" for="phone">Заполните поле</label>
               </div>
               <div class="popup__checkbox-wrapper"> 
-                <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes" required>
+                <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
                 <label for="happy">Я даю согласие на обработку персональных данных.</label>
               </div>
               <div class="popup__send-wrapper">
@@ -402,8 +404,8 @@
       <div class="popup__burger__body">
         <div class="popup__burger__content">
           <div class="popup__burger__text-wrapper">
-            <a href="#" class="burger__item">Стартовое внедрение</a>
-            <a href="#" class="burger__item">Сопровождение</a>
+            <a href="index.html" class="burger__item">Стартовое внедрение</a>
+            <a href="follow.html" class="burger__item">Сопровождение</a>
             <div class="burger__dropdown-wrapper">
               <div class="burger__arrow-wrapper">
                 <a href="#" class="burger__item">Купить лицензию</a>
@@ -413,18 +415,18 @@
               </div>
               <ul class="burger__dropdown">
                 <li class="burger__dropdown-item"><a href="box-version.html">Коробочная версия</a></li>
-                <li class="burger__dropdown-item"><a href="#">Облачная версия</a></li>
+                <li class="burger__dropdown-item"><a href="cloud-version.html">Облачная версия</a></li>
               </ul>
             </div>
             <div class="burger__free-wrapper">
-              <a href="#" class="burger__item">Аудит</a>
+              <a href="audit.html" class="burger__item active">Аудит</a>
               <p class="burger__free">free</p>
             </div>
             <div class="burger__free-wrapper">
-              <a href="#" class="burger__item">Демонстрация</a> 
+              <a href="demo.html" class="burger__item">Демонстрация</a> 
               <p class="burger__free">free</p>
             </div>
-            <a href="cases.html" class="burger__item active">Кейсы</a>
+            <a href="cases.html" class="burger__item">Кейсы</a>
             <a href="blog.html" class="burger__item">Блог</a>
             <p class="burger__phone">+7 4212 79-90-00</p>
             </div>

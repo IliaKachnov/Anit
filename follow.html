@@ -23,10 +23,12 @@
   
         <div class="nav__main">
           <a class="nav__link" href="index.html">Стартовое внедрение</a>
-          <a class="nav__link active" href="follow.html">Сопровождение</a>
+          <a class="nav__link active" href="index.html">Сопровождение</a>
           <div class="dropdown__wrapper">
             <p class="nav__link">Купить лицензию</з>
-            <img class="nav__black-arrow" src="img/icons/arrow.svg">
+              <svg class="nav__black-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M10.9425 5L4.05746 5C3.22303 5 2.75561 5.96169 3.27114 6.61782L6.71368 10.9992C7.11406 11.5088 7.88594 11.5088 8.28632 10.9992L11.7289 6.61782C12.2444 5.96169 11.777 5 10.9425 5Z" fill="#081A32"/>
+              </svg>
             <ul class="nav__dropdown">
               <a href="cloud-version.html"><li class="nav__dropdown-item">Облачная версия</li></a>
               <a href="box-version.html"><li class="nav__dropdown-item">Коробочная версия</li></a>
@@ -69,7 +71,7 @@
             <h1 class="follow__title">Профессиональная техническая поддержка и сопровождение Битрикс24</h1>
             <div class="follow__become-wrapper hide">
               <p class="follow__become">Стать клиентом ANIT</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <svg class="follow__become-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M5 5.05746L5 11.9425C5 12.777 5.96169 13.2444 6.61782 12.7289L10.9992 9.28632C11.5088 8.88594 11.5088 8.11406 10.9992 7.71368L6.61782 4.27114C5.96169 3.75562 5 4.22303 5 5.05746Z" fill="white"/>
               </svg>
             </div>
@@ -180,7 +182,7 @@
                 <p class="review__text">В заключении добавлю, социализм регрессийно формирует лайн-ап. Процессуальное изменение продолжает антропологический фьюжн. Англо-американский тип политической культуры означает институциональный дисторшн. Политическое учение Аристотеля случайно.</p>
                 <div class="review__btns">
                   <div class="review__review-wrapper">
-                    <p class="review__review">Читать весь отзыв</p>
+                    <p id="popup__review" class="review__review">Читать весь отзыв</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
                     </svg>
@@ -210,8 +212,8 @@
                 <p class="review__user">Виктор Шамиров</p>
                 <p class="review__text">В заключении добавлю, социализм регрессийно формирует лайн-ап. Процессуальное изменение продолжает антропологический фьюжн. Англо-американский тип политической культуры означает институциональный дисторшн. Политическое учение Аристотеля случайно.</p>
                 <div class="review__btns">
-                  <div id="popup__open-review" class="review__review-wrapper">
-                    <p class="review__review">Читать весь отзыв</p>
+                  <div id="popup__review" class="review__review-wrapper">
+                    <p   class="review__review">Читать весь отзыв</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
                     </svg>
@@ -241,8 +243,8 @@
                 <p class="review__user">Виктор Шамиров</p>
                 <p class="review__text">В заключении добавлю, социализм регрессийно формирует лайн-ап. Процессуальное изменение продолжает антропологический фьюжн. Англо-американский тип политической культуры означает институциональный дисторшн. Политическое учение Аристотеля случайно.</p>
                 <div class="review__btns">
-                  <div id="popup__open-review" class="review__review-wrapper">
-                    <p class="review__review">Читать весь отзыв</p>
+                  <div id="popup__review" class="review__review-wrapper">
+                    <p   class="review__review">Читать весь отзыв</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
                     </svg>
@@ -269,7 +271,7 @@
               <img class="reviews__mobile-img" src="img/review.png" alt="">
               <p class="reviews__mobile-title">Виктор Шамиров</p>
               <p class="reviews__mobile-text">В заключении добавлю, социализм регрессийно формирует лайн-ап. Процессуальное изменение продолжает антропологический фьюжн. Англо-американский тип политической культуры означает институциональный дисторшн. Политическое учение Аристотеля случайно.</p>
-              <div class="read__all-wrapper">
+              <div id="popup__review" class="read__all-wrapper">
                 <p class="read">Читать весь отзыв</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
@@ -280,8 +282,8 @@
               <img class="reviews__mobile-img" src="img/review.png" alt="">
               <p class="reviews__mobile-title">Виктор Шамиров</p>
               <p class="reviews__mobile-text">В заключении добавлю, социализм регрессийно формирует лайн-ап. Процессуальное изменение продолжает антропологический фьюжн. Англо-американский тип политической культуры означает институциональный дисторшн. Политическое учение Аристотеля случайно.</p>
-              <div class="read__all-wrapper">
-                <p class="read">Читать весь отзыв</p>
+              <div id="popup__review" class="read__all-wrapper">
+                <p   class="read">Читать весь отзыв</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
                 </svg>
@@ -291,8 +293,8 @@
               <img class="reviews__mobile-img" src="img/review.png" alt="">
               <p class="reviews__mobile-title">Виктор Шамиров</p>
               <p class="reviews__mobile-text">В заключении добавлю, социализм регрессийно формирует лайн-ап. Процессуальное изменение продолжает антропологический фьюжн. Англо-американский тип политической культуры означает институциональный дисторшн. Политическое учение Аристотеля случайно.</p>
-              <div class="read__all-wrapper">
-                <p class="read">Читать весь отзыв</p>
+              <div id="popup__review" class="read__all-wrapper">
+                <p   class="read">Читать весь отзыв</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M4 5.05746L4 11.9425C4 12.777 4.96169 13.2444 5.61782 12.7289L9.99923 9.28632C10.5088 8.88594 10.5088 8.11406 9.99923 7.71368L5.61782 4.27114C4.96169 3.75562 4 4.22303 4 5.05746Z" fill="white"/>
                 </svg>
@@ -823,16 +825,16 @@
             <p class="footer__title first">Услуги</p>
             <div class="footer__second-wrapper">
               <div class="footer__start-wrapper">
-                <p class="footer__link first">Стартовое внедрение</p>
+                <a href="index.html" class="footer__link first">Стартовое внедрение</a>
                 <div class="footer__free-wrapper">
-                  <a href="#" class="footer__link">Аудит</a>
+                  <a href="audit.html" class="footer__link">Аудит</a>
                   <a href="#" class="footer__free">free</a>
                 </div>
               </div>
               <div class="footer__following-wrapper">
-                <a href="#" class="footer__link">Сопровождение</a>
+                <a href="follow.html" class="footer__link">Сопровождение</a>
                 <div class="footer__free-wrapper">
-                  <a href="#" class="footer__link">Демонстрация</a>
+                  <a href="demo.html" class="footer__link">Демонстрация</a>
                   <p class="footer__free">free</p>
                 </div>
               </div>
@@ -843,12 +845,12 @@
                 <p class="footer__title">Компания</p>
               </div>
               <div class="footer__cases-wrapper">
-                <a href="#" class="footer__link">Облачная версия</a>
-                <a href="#" class="footer__link">Кейсы</a>
+                <a href="cloud-version.html" class="footer__link">Облачная версия</a>
+                <a href="cases.html" class="footer__link">Кейсы</a>
               </div>
               <div class="footer__version-wrapper">
                 <a href="box-version.html" class="footer__link">Коробочная версия</a>
-                <a href="#" class="footer__link">Блог</a>
+                <a href="blog.html" class="footer__link">Блог</a>
               </div>
             </div>
           </div>
@@ -871,15 +873,17 @@
             <h2 class="popup__title">Получить консультацию</h2>
             <form class="popup__form" action="">
               <div class="popup__name-wrapper">
-                <input class="popup__name" type="text" placeholder="Представьтесь" required>
+                <input id="name"  class="popup__name" type="text" placeholder="Представьтесь">
                 <img class="star__name" src="img/icons/red-star.png">
+                <label class="label__name" for="name">Заполните поле</label>
               </div>
               <div class="popup__phone-wrapper">
-                <input class="popup__phone" type="tel" placeholder="Телефон" required>
+                <input id="phone" class="popup__phone" type="tel" placeholder="Телефон">
                 <img class="star__phone" src="img/icons/red-star.png">
+                <label class="label__phone" for="phone">Заполните поле</label>
               </div>
               <div class="popup__checkbox-wrapper"> 
-                <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes" required>
+                <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
                 <label for="happy">Я даю согласие на обработку персональных данных.</label>
               </div>
               <div class="popup__send-wrapper">
@@ -894,6 +898,31 @@
       </div>
     </div>
 
+    <div id="popup__review-body" class="popup__support">
+      <div class="popup__support__body">
+        <div class="popup__support__content review">
+          <div class="popup__image-wrapper">
+            <img id="support__close" class="popup__support__close-img" src="img/icons/crest.png">
+          </div>
+          <div class="popup__support__text-wrapper review">
+            <div class="popup-review__title-wrapper"> 
+              <img class="popup-review__img" src="img/review.png">
+              <h2 class="popup-review__title">Виктор Шамиров</h2>
+            </div>
+            <div class="popup-review__text-wrapper">
+              <p class="popup-review__text first">В заключении добавлю, социализм регрессийно формирует лайн-ап. Процессуальное изменение продолжает антропологический фьюжн. Англо-американский тип политической культуры означает институциональный дисторшн. Политическое учение Аристотеля случайно.</p>
+              <p class="popup-review__text second"> Сверхпроводник, несмотря на внешние воздействия, теоретически возможен. Плазменное образование, в первом приближении, масштабирует шведский кит, в итоге возможно появление обратной связи и самовозбуждение системы. Шенгенская виза волнообразна. Нижнее течение возбуждает культурный осциллятор. Подземный сток традиционен. Ксерофитный кустарник текстологически индуцирует склон Гиндукуша.</p>
+              <p class="popup-review__text third">Солитон существенно тормозит фотон. Денежная единица традиционно входит внутримолекулярный лазер. Гидродинамический удар последовательно поглощает попугай. Колебание переворачивает вихрь. Пейзажный парк искажает солитон как при нагреве, так и при охлаждении. В турецких банях не принято купаться раздетыми, поэтому из полотенца сооружают юбочку, а месторождение ураново-радиевых руд ненаблюдаемо.</p>
+              <p class="popup-review__text fourth">Фронт расщепляет абориген с чертами экваториальной и монголоидной рас. Фотон возбуждает протяжённый квант. Отгонное животноводство отталкивает культурный ландшафт.</p>
+            </div>
+            <div class="letter__wrapper">
+              <p class="letter__title">Благодарственное письмо</p>
+              <img class="letter__img" src="img/letter.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -901,8 +930,8 @@
       <div class="popup__burger__body">
         <div class="popup__burger__content">
           <div class="popup__burger__text-wrapper">
-            <a href="#" class="burger__item">Стартовое внедрение</a>
-            <a href="#" class="burger__item">Сопровождение</a>
+            <a href="index.html" class="burger__item">Стартовое внедрение</a>
+            <a href="follow.html" class="burger__item active">Сопровождение</a>
             <div class="burger__dropdown-wrapper">
               <div class="burger__arrow-wrapper">
                 <a href="#" class="burger__item">Купить лицензию</a>
@@ -912,18 +941,18 @@
               </div>
               <ul class="burger__dropdown">
                 <li class="burger__dropdown-item"><a href="box-version.html">Коробочная версия</a></li>
-                <li class="burger__dropdown-item"><a href="#">Облачная версия</a></li>
+                <li class="burger__dropdown-item"><a href="cloud-version.html">Облачная версия</a></li>
               </ul>
             </div>
             <div class="burger__free-wrapper">
-              <a href="#" class="burger__item">Аудит</a>
+              <a href="audit.html" class="burger__item">Аудит</a>
               <p class="burger__free">free</p>
             </div>
             <div class="burger__free-wrapper">
-              <a href="#" class="burger__item">Демонстрация</a> 
+              <a href="demo.html" class="burger__item">Демонстрация</a> 
               <p class="burger__free">free</p>
             </div>
-            <a href="cases.html" class="burger__item active">Кейсы</a>
+            <a href="cases.html" class="burger__item">Кейсы</a>
             <a href="blog.html" class="burger__item">Блог</a>
             <p class="burger__phone">+7 4212 79-90-00</p>
             </div>

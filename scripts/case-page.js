@@ -23,3 +23,9 @@ const swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const caseTitle = document.querySelector('.case__title');
+
+document.addEventListener("DOMContentLoaded", () => {
+  caseTitle.classList.add('active')
+})

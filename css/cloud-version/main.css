@@ -8,6 +8,8 @@ main {
   border-bottom-left-radius: 32px; 
   border-bottom-right-radius: 32px;
   background-color: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 /* CLOUD */
@@ -102,6 +104,14 @@ main {
   transition: all .3s ease;
   cursor: pointer;
 }
+.cloud__btn-wrapper:hover {
+  background-color: #ECF1F6;
+}
+.cloud__btn-wrapper:hover .cloud__btn,
+.cloud__btn-wrapper:hover svg path {
+  color: #081A32;
+  fill: #081A32;
+}
 .cloud__download {
   padding: 20px 24px;
   display: flex;
@@ -111,6 +121,8 @@ main {
   height: 60px;
   border-radius: 32px;
   background: var(--red, #D7171F);
+  cursor: pointer;
+  transition: all .3s ease;
 }
 .cloud__demo {
   color: #FFF;
@@ -119,19 +131,18 @@ main {
   font-weight: 600;
   line-height: 110%; /* 19.8px */
 }
-.cloud__download:hover:hover,
-.cloud__btn-wrapper:hover {
+.cloud__download:hover:hover {
   background-color: #ECF1F6;
 }
 
 .cloud__download:hover .cloud__demo,
-.cloud__download:hover .cloud__arrow path,
-.cloud__btn-wrapper:hover .cloud__btn,
-.cloud__btn-wrapper:hover .cloud__arrow path {
+.cloud__download:hover .cloud__arrow path{
   color: #081A32;
   fill: #081A32;
 }
 .cloud__btn {
+  position: relative;
+  z-index: 3;
   color: #FFF;
   font-size: 18px;
   font-style: normal;
@@ -326,6 +337,7 @@ main {
   gap: 69px;
 }
 .audit__woman-wrapper {
+  margin-top: 5px;
   transition: all .8s ease-in-out;
   margin-bottom: -68px;
 }
@@ -526,7 +538,7 @@ main {
   margin-bottom: -260px;
   margin-top: -27px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 .rate {
   margin-top: 180px;
@@ -1057,12 +1069,16 @@ main {
   font-style: normal;
   font-weight: 600;
   line-height: 110%; /* 19.8px */
+  transition: all .3s ease;
 }
-
-.table__order {
+.table__order-wrapper:hover {
+  background-color: #081A32;
 }
-.table__arrow {
-}
+/* .table__order-wrapper:hover svg path,
+.table__order-wrapper:hover .table__order {
+  color: #081A32;
+  fill: #081A32;
+} */
 .description {
   max-width: 1280px;
   width: 100%;
@@ -1086,8 +1102,6 @@ main {
 .description__img {
   width: 32px;
   height: 32px;
-}
-.description__title {
 }
 .table__item-mobile {
   display: none;
@@ -1283,12 +1297,11 @@ main {
   .cloud__btn-wrapper {
     width: 192px;
     height: 58px;
-    justify-content: space-between;
-    gap: 0px;
+    gap: 16px;
     padding: 0 16px;
   }
   .cloud__btn {
-    width: 191px;
+    width: max-content;
     font-size: 16px;
   }
   
@@ -1305,10 +1318,15 @@ main {
     font-weight: 400;
     line-height: 120%; /* 19.2px */
   }
+  .include__make {
+    font-size: 18px;
+  }
   .include__make-wrapper {
     width: 272px;
     padding: 0 16px;
+    gap: 16px;
   }
+
   .icnlude__title {
     font-size: 24px;
   }
@@ -1325,9 +1343,9 @@ main {
   .include__item {
     margin-top: 24px;
   }
-  .include__make {
+  /* .include__make {
     font-size: 16px;
-  }
+  } */
   .audit__inner-wrapper {
     height: 1132px;
   }
