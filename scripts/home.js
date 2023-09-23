@@ -23,6 +23,11 @@ const swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 0,
+    slideShadows: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 2,
