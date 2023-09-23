@@ -10,8 +10,3 @@ filterItems.forEach((item) => {
   });
 });
 
-const casesTitle = document.querySelector('.cases__title');
-
-document.addEventListener('DOMContentLoaded', () => {
-  casesTitle.classList.add('active');
-});
