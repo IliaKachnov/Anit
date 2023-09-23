@@ -1035,6 +1035,9 @@ main {
     max-width: 720px;
     width: 100%;
   }
+  .demo__title {
+    text-align: center;
+  }
   .demo__title-img {
     display: none;
   }
@@ -1367,7 +1370,8 @@ main {
 @media (max-width: 580px) {
   .demo__title {
     font-size: 32px;
-    height: max-content;
+    height: 80px;
+    text-align: center;
   }
   .result__receive-wrapper {
     margin-bottom: 67px;
