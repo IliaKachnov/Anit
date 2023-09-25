@@ -843,10 +843,17 @@ main {
   .result__item-img.first {
     display: none;
   }
+  .result__item-img.second {
+    object-fit: fill;
+  }
   .result__item.first {
     background-image: url('../../img/demo-user-mid.png');
     background-position: center center;
   }
+  /* .result__item.second {
+    background-image: url('../../img/demo-');
+    background-position: center center;
+  } */
 
   .cloud__title {
     font-size: 48px;

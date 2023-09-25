@@ -6,7 +6,7 @@
   transform: translateX(-50%);
   padding-left: 25px;
   padding-right: 25px;
-  transition: all .8s ease;
+  transition: all 1s ease;
   z-index: 3;
 }
 .nav.active {
@@ -35,7 +35,7 @@
 .logo__slogan {
   width: 122px;
   font-family: 'PantonSemibold';
-  color: var(--black, #081A32);
+  color: #081A32;
   font-size: 10px;
   /* font-style: bold; */
   font-weight: 800;
@@ -59,7 +59,7 @@
 }
 .nav__link,
 .nav__dropdown-item {
-  color: var(--black, #081A32);
+  color: #081A32;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -71,10 +71,10 @@
   align-items: center;
 }
 .nav__link:hover {
-  color: var(--red, #D7171F);
+  color:#D7171F;
 }
 .nav__link.active {
-  color: var(--red, #D7171F);
+  color: #D7171F;
 }
 .nav__link {
   position: relative;
@@ -121,7 +121,7 @@
   width: 240px;
   height: 76px;
   border-radius: 12px;
-  background: var(--White, #FFF);
+  background: #FFF;
   box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
   display: flex;
   justify-content: center;
@@ -143,7 +143,7 @@
 .nav__free {
   padding: 4px 8px;
   border-radius: 32px;
-  background: var(--red, #D7171F);
+  background: #D7171F;
   color: #FFF;
   font-family: "PantonSemibold";
   font-size: 12px;
@@ -160,7 +160,7 @@
   gap: 24px;
 }
 .nav__phone {
-  color: var(--black-text, #081A32);
+  color: #081A32;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -175,7 +175,7 @@
   width: 196px;
   height: 48px;
   border-radius: 32px;
-  background: var(--black, #081A32);
+  background: #081A32;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,7 +183,7 @@
   transition: all .2s ease;
 }
 .nav__support:hover {
-  background: var(--bg, #ECF1F6);
+  background: #ECF1F6;
   
 }
 .nav__support:hover .nav__support-title ,
@@ -259,7 +259,7 @@
 .popup__burger__text-wrapper {
 }
 .burger__item {
-  color: var(--black, #081A32);
+  color: #081A32;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -292,7 +292,7 @@
 }
 .burger__dropdown-item {
   margin-top: 16px;
-  color: var(--black, #081A32);
+  color: #081A32;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -321,7 +321,7 @@
   width: 38px;
   height: 20px;
   border-radius: 32px;
-  background: var(--red, #D7171F);
+  background: #D7171F;
   display: flex;
   align-items: center;
   justify-content: center;  
@@ -333,7 +333,7 @@
   line-height: 100%; /* 12px */
 }
 .burger__phone {
-  color: var(--black, #081A32);
+  color: #081A32;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
