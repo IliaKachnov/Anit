@@ -76,3 +76,19 @@ prevBtnThird.addEventListener('click', () => {
   reviewItemSecond.classList.remove('hide');
   reviewItemThird.classList.add('hide');
 })
+
+
+const filterItems = document.querySelectorAll('.plans__filter');
+
+// Добавляем обработчик клика на каждый элемент
+filterItems.forEach((filterItem) => {
+  filterItem.addEventListener('click', function () {
+    // Убираем класс "active" у всех элементов
+    filterItems.forEach((item) => {
+      item.classList.remove('active');
+    });
+
+    // Добавляем класс "active" только текущему элементу
+    this.classList.add('active');
+  });
+});

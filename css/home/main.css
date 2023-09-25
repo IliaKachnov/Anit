@@ -1,8 +1,8 @@
 main {
-  background-image: url('../../img/follow-intro-bg.png');
-  background-size: fill;
+  /* background-image: url('../../img/follow-intro-bg.png');
+  background-size: contain;
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-left-radius: 32px; 
@@ -11,9 +11,13 @@ main {
   position: relative;
   z-index: 2;
 }
-
+.wrapper {
+  position: relative;
+  /* height: 100%; */
+}
 
 .follow {
+  
   /* height: 100%; */
 }
 .follow__wrapper {
@@ -333,7 +337,17 @@ main {
 
 /* WHAT */
 .screen {
+  background-image: url('../../img/follow-intro-bg.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: sticky;
+  z-index: 1;
+  top: 0;
   overflow: hidden;
+}
+.screen.active {
+  position: relative;
 }
 .screen__wrapper {
   max-width: 1280px;
@@ -399,7 +413,7 @@ main {
   transform: translateY(80px);
 }
 .screen__img-wrapper:hover {
-  transform: translateY(10px);
+  /* transform: translateY(10px); */
 }
 .screen__img {
   object-fit: contain;
@@ -770,9 +784,7 @@ main {
   transition: all .3s ease;
 
 }
-.tools__item:hover {
-  box-shadow: 0px 20px 30px 0px rgba(43, 27, 53, 0.10);
-}
+
 .tools__item.hide {
   display: none;
 }
@@ -809,9 +821,6 @@ main {
   background: var(--blue, #0D4DA1);
   overflow: hidden;
   transition: all .3s ease;
-}
-.tools__item-large-blue:hover {
-  box-shadow: 0px 20px 30px 0px rgba(43, 27, 53, 0.10);
 }
 .tools__item-large-wrapper {
   height: 100%;
@@ -878,9 +887,6 @@ main {
   background: var(--blue, #0D4DA1);
   overflow: hidden;
   transition: .3s ease all;
-}
-.tools__large-blue:hover {
-  box-shadow: 0px 20px 30px 0px rgba(43, 27, 53, 0.10);
 }
 .tools__large-blue-wrapper {
   display: flex;
@@ -951,9 +957,6 @@ main {
   background: var(--bg, #ECF1F6);
   transition: .3s ease all;
 }
-.tools__item-large:hover {
-  box-shadow: 0px 20px 30px 0px rgba(43, 27, 53, 0.10);
-}
 .tools__item-large-title.dark {
   color: var(--black, #081A32);
   font-size: 32px;
@@ -1007,6 +1010,11 @@ main {
 /* COMBO */
 
 .combo {
+  border-radius: 32px 32px 0 0;
+  position: relative;
+  z-index: 2;
+  margin-top: -30px;
+  background-color: #fff;
 }
 .combo__wrapper {
   max-width: 1280px;
@@ -1014,7 +1022,7 @@ main {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 140px;
+  padding-top: 140px;
 }
 .combo__title-wrapper {
   background-image: url('../../img/home-support.png');
@@ -1338,6 +1346,7 @@ line-height: 120%; /* 21.6px */
 .audit__woman-img {
   width: 517px;
   height: 469px;
+  object-fit: contain;
 }
 .include__wrapper {
   
@@ -1440,9 +1449,6 @@ line-height: 120%; /* 21.6px */
   display: flex;
   flex-wrap: wrap;
   gap: 28px;
-}
-.why__item:hover {
-  box-shadow: 0px 20px 30px 0px rgba(43, 27, 53, 0.10);
 }
 .why__wrapper:hover .why__title,
 .why__wrapper:hover .why__we {
@@ -1734,8 +1740,16 @@ line-height: 120%; /* 21.6px */
   justify-content: space-between;
   align-items: center;
 }
+
 .review__photo {
   width: max-content;
+  position: relative;
+}
+.review__rating {
+  width: 100px;
+  height: 100px;
+  left: 320px;
+  position: absolute;
 }
 .review__img {
   width: 449px;
@@ -1825,7 +1839,7 @@ line-height: 120%; /* 21.6px */
 .review__arrow-reverse {
   transform: rotate(180deg);
 }
-.review__item,
+/* .review__item,
 .review__item.first,
 .review__item.second,
 .review__item.third {
@@ -1837,6 +1851,29 @@ line-height: 120%; /* 21.6px */
 .review__item.second.hide, 
 .review__item.third.hide {
   max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+} */
+.review__item,
+.review__item.first,
+.review__item.second,
+.review__item.third {
+  max-height: 100%;
+  opacity: 1;
+  transform: translate(0);
+  transition: all .6s ease;
+}
+.review__item.hide,
+.review__item.first.hide, 
+.review__item.second.hide, 
+.review__item.third.hide {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(300px);
+  transform: translateX(600px);
+  z-index: -1;
+  /* max-height: 0; */
   overflow: hidden;
   padding: 0;
   border: none;
@@ -2182,6 +2219,9 @@ background: var(--red, #D7171F);
 @media (max-width: 1330px) {
   .why__title {
     font-size: 128px;
+  }
+  .review__rating {
+    display: none;
   }
   .why__items {
     max-width: 720px;

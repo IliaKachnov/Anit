@@ -113,6 +113,13 @@
   line-height: 130%;
   cursor: pointer;
 }
+.popup__name.wrong:valid,
+.popup__phone.wrong:valid,
+.popup__name.wrong:focus:valid,
+.popup__phone.wrong:focus:valid {
+  outline-color: #D7171F;
+  border: #D7171F 2px solid;
+}
 .popup__name:focus:valid,
 .popup__phone:focus:valid {
   outline-color: #0D4DA1;

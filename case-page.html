@@ -413,7 +413,7 @@
                 <label class="label__name" for="name">Заполните поле</label>
               </div>
               <div class="popup__phone-wrapper">
-                <input id="phone" class="popup__phone" type="tel" placeholder="Телефон">
+                <input oninput="this.value = this.value.replace(/[^0-9+()]/g, '')" id="phone" class="popup__phone" type="tel" placeholder="+7 (999) 999 99 99">
                 <img class="star__phone" src="img/icons/red-star.png">
                 <label class="label__phone" for="phone">Заполните поле</label>
               </div>

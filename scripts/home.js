@@ -75,3 +75,24 @@ prevBtnThird.addEventListener('click', () => {
   reviewItemSecond.classList.remove('hide');
   reviewItemThird.classList.add('hide');
 })
+
+
+const elementToAddClass = document.querySelector('.screen');
+
+// Функция, которая будет вызываться при прокрутке страницы
+function addClassOnScroll() {
+  // Получаем текущую позицию прокрутки страницы
+  const scrollY = window.scrollY || window.pageYOffset;
+
+  // Проверяем, прокручена ли страница на 1000px вниз
+  if (scrollY >= 1000) {
+    // Если да, добавляем класс к элементу
+    elementToAddClass.classList.add('active');
+  } else {
+    // В противном случае, удаляем класс (если он был добавлен ранее)
+    elementToAddClass.classList.remove('active');
+  }
+}
+
+// Добавляем слушатель события прокрутки страницы
+window.addEventListener('scroll', addClassOnScroll);

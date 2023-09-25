@@ -489,9 +489,6 @@ main {
   transition: all .3s ease;
   
 }
-.instruction__wrapper:hover {
-  box-shadow: 0px 20px 30px 0px rgba(43, 27, 53, 0.10);
-}
 .instruction__title {
   color: var(--black, #081A32);
   font-size: 24px;

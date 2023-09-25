@@ -237,7 +237,7 @@
           <h3 class="result__title">В результате демонстрации</h3>
           <div class="result__items">
             <div class="result__item first">
-              <img class="result__item-img" src="./img/demo-man-work.png">
+              <img class="result__item-img first" src="./img/demo-man-work.png">
               <div class="result__item-text-wrapper">
                 <p class="result__item-text">На конкретных примерах поймёте, как может работать ваш бизнес с помощью Битрикс24</p>
                 <div class="result__more-wrapper">
@@ -377,7 +377,7 @@
                 <label class="label__name" for="name">Заполните поле</label>
               </div>
               <div class="popup__phone-wrapper">
-                <input id="phone" class="popup__phone" type="tel" placeholder="Телефон">
+                <input oninput="this.value = this.value.replace(/[^0-9+()]/g, '')" id="phone" class="popup__phone" type="tel" placeholder="+7 (999) 999 99 99">
                 <img class="star__phone" src="img/icons/red-star.png">
                 <label class="label__phone" for="phone">Заполните поле</label>
               </div>

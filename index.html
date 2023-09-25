@@ -780,7 +780,7 @@
               <div class="review__item first">
                 <div class="review__photo">
                   <img class="review__img" src="img/home-review.png">
-                  
+                  <img class="review__rating" src="img/home-rating.png" alt="">
                 </div> 
                 <div class="review__body">
                   <p class="review__user">Виктор Шамиров</p>
@@ -811,6 +811,7 @@
               <div id="second" class="review__item second hide">
                 <div class="review__photo">
                   <img class="review__img" src="img/home-review.png">
+                  <img class="review__rating" src="img/home-rating.png" alt="">
                 </div>
                 <div class="review__body">
                   <p class="review__user">Виктор Шамиров</p>
@@ -841,6 +842,7 @@
               <div id="third" class="review__item third hide">
                 <div class="review__photo">
                   <img class="review__img" src="img/home-review.png">
+                  <img class="review__rating" src="img/home-rating.png" alt="">
                 </div>
                 <div class="review__body">
                   <p class="review__user">Виктор Шамиров</p>
@@ -1030,7 +1032,7 @@
                 <label class="label__name" for="name">Заполните поле</label>
               </div>
               <div class="popup__phone-wrapper">
-                <input id="phone" class="popup__phone" type="tel" placeholder="Телефон">
+                <input id="phone" class="popup__phone" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9+()]/g, '')" type="tel" placeholder="+7 (999) 999 99 99">
                 <img class="star__phone" src="img/icons/red-star.png">
                 <label class="label__phone" for="phone">Заполните поле</label>
               </div>

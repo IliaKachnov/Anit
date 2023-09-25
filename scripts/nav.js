@@ -65,12 +65,14 @@ supportSubmitBtn.addEventListener('submit', (e) => {
     e.preventDefault();
     if(inputNameValue === ''){
       labelName.classList.add('hide');
+      inputName.classList.add('wrong');
     }
     if(!customCheckbox.checked) {
       customCheckbox.classList.add('active')
     }
     if(inputPhoneValue === '') {
       labelphone.classList.add('hide');
+      inputPhone.classList.add('wrong');
     }
   } else {
     labelphone.classList.remove('hide');
