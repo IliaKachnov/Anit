@@ -124,10 +124,6 @@
 .popup__phone:focus:valid {
   outline-color: #0D4DA1;
 }
-/* .popup__name:focus:required:invalid ,
-.popup__phone:focus:required:invalid {
-  outline-color: #D7171F;
-} */
 .popup__name.active:focus,
 .popup__phone.active:focus {
   outline-color: #D7171F;
@@ -238,16 +234,9 @@
 }
 
 /*  */
-.popup__support__content {
-}
-.popup__image-wrapper {
-}
-.popup__support__close-img {
-}
-.popup__support__text-wrapper {
-}
 .popup__support__content.review {
   overflow-y: auto;
+  overflow-x: hidden;
   padding-bottom: 300px;
 }
 .popup-review__title-wrapper {
@@ -278,15 +267,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 23.4px */
-}
-/* .popup-review__text.first {
-  margin-top: 20px;
-} */
-.second {
-}
-.third {
-}
-.fourth {
 }
 .letter__wrapper {
   margin-top: 68px;
