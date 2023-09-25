@@ -47,48 +47,22 @@ const swiper = new Swiper(".mySwiper", {
 
 
 
-const btnNextFirst = document.querySelector('#next-first');
-const prevBtnSecond = document.querySelector('#prev-btn-second');
-const nextBtnSecond = document.querySelector('#next-btn-third')
-const prevBtnThird = document.querySelector('#prev-btn-third');
-
-const reviewItemFirst = document.querySelector('.review__item.first');
-const reviewItemSecond = document.querySelector('.review__item.second');
-const reviewItemThird = document.querySelector('.review__item.third');
-
-
-btnNextFirst.addEventListener('click', () => {
-  reviewItemFirst.classList.add('hide');
-  reviewItemSecond.classList.remove('hide')
-})
-
-prevBtnSecond.addEventListener('click', () => {
-  reviewItemFirst.classList.remove('hide');
-  reviewItemSecond.classList.add('hide')
-})
-
-nextBtnSecond.addEventListener('click', () => {
-  reviewItemSecond.classList.add('hide');
-  reviewItemThird.classList.remove('hide');
-})
-
-prevBtnThird.addEventListener('click', () => {
-  reviewItemSecond.classList.remove('hide');
-  reviewItemThird.classList.add('hide');
-})
-
-
 const filterItems = document.querySelectorAll('.plans__filter');
 
-// Добавляем обработчик клика на каждый элемент
 filterItems.forEach((filterItem) => {
   filterItem.addEventListener('click', function () {
-    // Убираем класс "active" у всех элементов
     filterItems.forEach((item) => {
       item.classList.remove('active');
     });
-
-    // Добавляем класс "active" только текущему элементу
     this.classList.add('active');
   });
+});
+
+
+
+const swiper1 = new Swiper(".mySwiper1", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

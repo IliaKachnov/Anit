@@ -9,6 +9,10 @@
   src: url('../fonts/Panton-Light.ttf') format('truetype'); 
 }
 @font-face {
+  font-family: 'PantonBold';
+  src: url('../fonts/Panton-Bold.ttf') format('truetype'); 
+}
+@font-face {
   font-family: 'PantonSemibold';
   src: url('../fonts/Panton-SemiBold.ttf') format('truetype'); 
   font-weight: 700;

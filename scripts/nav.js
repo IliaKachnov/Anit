@@ -1,22 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector(".nav");
-  const navOffset = nav.offsetTop;
-  let isScrollingUp = false;
+  const scrollThreshold = 200;
+  let isScrollingDown = false;
 
   window.addEventListener("scroll", () => {
-      const currentScrollTop = window.pageYOffset;
+    const currentScrollTop = window.pageYOffset;
 
-      if (currentScrollTop > navOffset) {
-          nav.classList.add("active");
-          isScrollingUp = false;
-      } else {
-          if (!isScrollingUp) {
-              nav.classList.remove("active");
-          }
+    if (currentScrollTop > scrollThreshold) {
+      if (!isScrollingDown) {
+        nav.classList.add("active");
+        isScrollingDown = true;
       }
-      if (currentScrollTop === 0) {
-          isScrollingUp = true;
-      }
+    } else {
+      nav.classList.remove("active");
+      isScrollingDown = false;
+    }
   });
 });
 

@@ -34,11 +34,6 @@ main {
   align-items: center;
   gap: 8px;
 }
-.case__title {
-
-}
-.case__back-arrow {
-}
 .case__back-title {
   color: var(--black, #081A32);
   font-size: 18px;

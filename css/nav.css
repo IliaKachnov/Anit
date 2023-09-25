@@ -6,7 +6,7 @@
   transform: translateX(-50%);
   padding-left: 25px;
   padding-right: 25px;
-  transition: all 1s ease;
+  transition: all 1.5s ease-in-out;
   z-index: 3;
 }
 .nav.active {
@@ -34,11 +34,10 @@
 }
 .logo__slogan {
   width: 122px;
-  font-family: 'PantonSemibold';
+  font-family: 'PantonBold';
   color: #081A32;
   font-size: 10px;
-  /* font-style: bold; */
-  font-weight: 800;
+  font-weight: 900;
   line-height: 110%; /* 11px */
   letter-spacing: 0.2px;
   text-transform: uppercase;
@@ -55,13 +54,14 @@
   justify-content: space-between;
   border-radius: 32px;
   background: rgba(255, 255, 255, 0.80);
-  backdrop-filter: blur(25px);
 }
 .nav__link,
 .nav__dropdown-item {
   color: #081A32;
   font-size: 16px;
   font-style: normal;
+  font-family: 'Panton';
+  font-weight: 600;
   line-height: 110%; /* 17.6px */
   cursor: pointer;
 }
@@ -139,6 +139,7 @@
   align-items: center;
   gap: 8px;
 }
+
 .nav__free {
   padding: 4px 8px;
   border-radius: 32px;
@@ -161,8 +162,8 @@
 .nav__phone {
   color: #081A32;
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
   line-height: 110%; /* 17.6px */
   text-transform: uppercase;
 }

@@ -17,3 +17,16 @@ closeNameModals.forEach((closeNameModal) => {
     document.body.style.overflow = 'visible';
   });  
 })
+
+
+const letterImg = document.querySelector('.letter__img');
+const imgFullscreenWrapper = document.querySelector('.img__fullscreen-wrapper');
+const crestFull = document.querySelector('.crest__full');
+
+
+letterImg.addEventListener('click', () => {
+  imgFullscreenWrapper.classList.remove('hide');
+})
+crestFull.addEventListener('click', () => {
+  imgFullscreenWrapper.classList.add('hide');
+})
