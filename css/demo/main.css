@@ -32,8 +32,6 @@ main {
 .cloud__wrapper:hover .cloud__img {
   transform: translateX(-30px);
 }
-.cloud__first-wrapper {
-}
 .cloud__title {
   color: var(--black, #081A32);
   font-size: 60px;
@@ -159,9 +157,6 @@ main {
 
 /* DEMO */
 
-.demo {
-  
-}
 .demo__wrapper {
   max-width: 1280px;
   width: 100%;
@@ -214,7 +209,6 @@ main {
 .demo__items {
   display: flex;
   flex-direction: column;
-  /* align-items: end; */
   gap: 28px;
 }
 .demo__item {
@@ -248,8 +242,6 @@ main {
   font-weight: 600;
   line-height: 110%; /* 35.2px */
 }
-.demo__item-text-wrapper {
-}
 .demo__item-text {
   color: var(--black, #081A32);
   font-size: 18px;
@@ -266,12 +258,10 @@ main {
 
 
 .audit__inner-wrapper {
-  
   background-image: url('../../img/audit-form-bg.png');
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-
   height: 1087px;
   display: flex;
   align-items: center;
@@ -282,7 +272,6 @@ main {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-
   border-radius: 32px;
   background: rgba(8, 26, 50, 0.60);
   padding: 68px;
@@ -322,9 +311,6 @@ main {
 .audit__woman-img {
   width: 517px;
   height: 469px;
-}
-.include__wrapper {
-  
 }
 .icnlude__title {
   color: #FFF;
@@ -378,10 +364,6 @@ main {
   font-weight: 600;
   line-height: 110%; /* 19.8px */
 }
-.include__make-img {
-}
-
-
 /* AUDIT END */
 
 
@@ -457,9 +439,6 @@ main {
   font-weight: 400;
   line-height: 120%; /* 21.6px */
 }
-.why__item-wrapper {
-  
-}
 .why__number {
   display: flex;
   align-items: center;
@@ -494,8 +473,6 @@ main {
   display: flex;
   gap: 48px;
   margin-bottom: 140px;
-}
-.why__static-block {
 }
 .why__price {
   color: var(--black, #081A32);
@@ -564,9 +541,6 @@ main {
   display: flex;
   gap: 12px;
 }
-.support__plus-text {
-
-}
 .support__plus-img {
   width: 16px;
   height: 16px;
@@ -580,10 +554,6 @@ main {
   height: 280px;
   position: relative;
 }
-/* .minimum__item {
-  position: sticky;
-  top: 100px;
-} */
 .minimum__title,
 .minimum__text {
   color: var(--black, #081A32);
@@ -623,8 +593,6 @@ main {
   font-style: normal;
   font-weight: 600;
   line-height: 110%; /* 19.8px */
-}
-.minimum__order-img {
 }
 /* WHY END */
 
@@ -697,23 +665,6 @@ main {
   display: none;
 }
 /* RESULT */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CONTACT */
 
 .contact__wrapper {
@@ -736,7 +687,6 @@ main {
   justify-content:start;
 }
 .contact__title {
-  /* margin-top: 180px; */
   max-width: 1062px;
   width: 100%;
   color: #FFF;
@@ -778,8 +728,6 @@ main {
   color: #081A32;
   fill: #081A32;
 }
-
-
 .follow__become-svg {
   position: relative;
   z-index: 3;
@@ -859,8 +807,6 @@ main {
     background-image: url('../../img/hand-mid.jpg');
     background-position: center center;
   }
-
-
   .cloud__title {
     font-size: 48px;
     max-width: 656px;
@@ -868,7 +814,6 @@ main {
   }
   .cloud__reason {
     font-size: 16px;
-    /* width: max-content; */
     max-width: 316px;
     width: 100%;
     height:max-content;
@@ -1146,7 +1091,6 @@ main {
   .cloud__wrapper {
     padding: 24px;
     width: 320px;
-    /* width: 100%; */
     height: 607px;
   }
   .cloud__img-mobile {
@@ -1241,7 +1185,6 @@ main {
   }
   .why__we {
     font-size: 18px;
-    /* margin: 0 auto; */
     margin: 0 auto;
     margin-bottom: 16px;
     margin-top: 68px;
@@ -1308,10 +1251,7 @@ main {
   .why__price-wrapper {
     padding: 24px;
     flex-direction: column;
-    /* align-items: center; */
-    /* height: 1111px; */
     height: 100%;
-    /* max-width: 450px; */
     width: 100%;
     gap: 24px;
     margin-bottom: 68px;
@@ -1363,7 +1303,6 @@ main {
   }
   .audit__woman-img {
     width: 372px;
-    /* height: 387px; */
     object-fit: cover;
   }
 }
@@ -1467,20 +1406,6 @@ main {
   }
   .result__more-wrapper {
     display: none;
-    /* max-width: 142px;
-    width: 100%;
-    height: 40px;
-    padding: 12px 16px;
-    border-radius: 32px;
-    background: var(--blue, #0D4DA1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #FFF;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 100%; */
   }
 }
 @media (max-width: 450px) {
@@ -1578,9 +1503,6 @@ main {
   .why__we {
     padding-left: 0;
   }
-  /* .why {
-    padding-right: 0;
-  } */
 }
 @media (max-width: 362px) {
   .why {

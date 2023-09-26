@@ -187,10 +187,6 @@ main {
 /* CLOUD END */
 
 /* DEMO */
-
-.demo {
-  
-}
 .demo__wrapper {
   max-width: 1280px;
   width: 100%;
@@ -269,8 +265,6 @@ main {
   font-weight: 600;
   line-height: 110%; /* 35.2px */
 }
-.demo__item-text-wrapper {
-}
 .demo__item-text {
   color: var(--black, #081A32);
   font-size: 18px;
@@ -345,9 +339,6 @@ main {
   width: 517px;
   height:620px;
 }
-.include__wrapper {
-  
-}
 .icnlude__title {
   color: #FFF;
   font-size: 32px;
@@ -400,11 +391,6 @@ main {
   font-weight: 600;
   line-height: 110%; /* 19.8px */
 }
-.include__make-img {
-}
-
-
-
 /* OPPORTUNITIES */
 
 .opportunities {
@@ -634,8 +620,6 @@ main {
   font-weight: 600;
   line-height: 110%; /* 19.8px */
 }
-.rate__item-support-arrow {
-}
 .opportunities__item.large.hide {
   display: flex;
 }
@@ -749,11 +733,9 @@ main {
   margin-top: 68px;
   display: flex;
   align-items: center;
-  /* gap: 28px; */
 }
 .topics {
   height: 1038px;
-  /* width: 319px; */
   width: 100%;
 }
 .table__scroll-wrapper {
@@ -770,16 +752,12 @@ main {
   font-style: normal;
   font-weight: 600;
   line-height: 110%; /* 17.6px */
-  /* margin-top: 12px; */
 }
 .cell__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-/* .cell.main {
-  margin-top: 12px;
-} */
 .cell__i {
   height: 16px;
   width: 16px;
@@ -853,10 +831,6 @@ main {
   background-color: #FFF;
   border-radius: 32px 0 0 32px;
   box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05), 0px -15px 20px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 0px rgba(0, 0, 0, 0); 
-
-
-
-  /* box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05); */
 }
 
 .table__prices-wrapper {
@@ -869,14 +843,11 @@ main {
 .table__progress-wrapper:hover .table__bar-wrapper {
   background-color: #FFF;
   border-right: transparent;
-  /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05), 0px -5px 20px rgba(0, 0, 0, 0.05); */
-
 }
 .table__progress-wrapper.active,
 .table__progress-wrapper.active .table__bar-wrapper {
   background-color: #FFF;
   border-right: transparent;
-  /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05), 0px -5px 20px rgba(0, 0, 0, 0.05); */
 }
 .table__plan-wrapper {
   display: flex;
@@ -888,8 +859,6 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  /* padding-left: 83px;
-  padding-right: 81px; */
   width: 239px;
 }
 
@@ -986,17 +955,9 @@ main {
   align-items: center;
   gap: 8px;
 }
-.table__user-arrow {
-}
 .table__cloud-wrapper {
   display: flex;
   align-items: center;
-}
-.table__cloud {
-}
-.table__cloud-place {
-}
-.table__cloud-size {
 }
 .table__progress-wrapper {
   display: flex;
@@ -1005,18 +966,14 @@ main {
   cursor: pointer;
 }
 
-.first {
-}
 .cell.main {
   height: 20px;
 }
 .cell__wrapper {
-  /* background-color: #c40e0e; */
   margin-top: 48px;
   height: 142px;
 }
 .table__progress-wrapper.first {
-  /* background-color: #c40e0e; */
   margin-top: 32px;
 }
 .table__bar-wrapper {
@@ -1071,11 +1028,6 @@ main {
 .table__order-wrapper:hover {
   background-color: #081A32;
 }
-/* .table__order-wrapper:hover svg path,
-.table__order-wrapper:hover .table__order {
-  color: #081A32;
-  fill: #081A32;
-} */
 .description {
   max-width: 1280px;
   width: 100%;
@@ -1257,7 +1209,6 @@ main {
   .cloud__wrapper {
     padding: 24px;
     width: 320px;
-    /* width: 100%; */
     height: 617px;
   }
   .cloud__img-mobile {
@@ -1340,9 +1291,6 @@ main {
   .include__item {
     margin-top: 24px;
   }
-  /* .include__make {
-    font-size: 16px;
-  } */
   .audit__inner-wrapper {
     height: 1132px;
   }
@@ -1358,7 +1306,6 @@ main {
   
   .audit__woman-img {
     width: 372px;
-    /* height: 387px; */
     object-fit: cover;
   }
 }
@@ -1489,9 +1436,6 @@ main {
   .table__filters {
     flex-direction: column;
   }
-    /* .table__scroll-wrapper {
-      display: block;
-    } */
   .table__plan-title {
     font-size: 14px;
   }
@@ -1516,7 +1460,6 @@ main {
   .topics {
     width: 236px;
     margin-top: 157px;
-    /* margin-bottom: 49px; */
     flex-shrink: 0;
   }
   .table__order__btns {
@@ -1613,7 +1556,6 @@ main {
 }
 @media (max-width: 740px) {
   .description {
-    /* margin: 0 auto; */
     margin-left: 0;
     margin-top: 16px;
   }

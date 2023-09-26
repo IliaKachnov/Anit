@@ -51,8 +51,6 @@ main {
 .blogs__items {
   margin-top: 68px;
 }
-
-
 .pagination__wrapper {
   height: 80px;
   margin-top: 68px;
@@ -153,7 +151,6 @@ main {
 }
 .blog__item-date {
   color: var(--black, #081A32);
-  font-family: Panton;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -198,8 +195,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
   transition: all .3s ease;
-}
-.blog__item-small {
 }
 .blog__item-img-wrapper-small {
   overflow: hidden;

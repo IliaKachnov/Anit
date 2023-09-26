@@ -102,8 +102,6 @@ main {
   align-items: center;
   gap: 16px;
 }
-.case__nav-img {
-}
 .case__user-img-wrapper {
   margin-top: 68px;
   max-width: 1280px;
@@ -506,8 +504,6 @@ main {
   font-weight: 400;
   line-height: 130%; /* 20.8px */
 }
-.download__icon {
-}
 
 /* DOCUMENTS END */
 
@@ -572,7 +568,6 @@ main {
   justify-content:start;
 }
 .contact__title {
-  /* margin-top: 180px; */
   color: #FFF;
   text-align: center;
   font-size: 80px;
@@ -665,7 +660,6 @@ main {
     padding: 16px 24px;
     height: 132px;
     align-items: start;
-    /* width: 320px; */
     margin-top: 32px;
   }
   main {

@@ -496,29 +496,7 @@ main {
   font-weight: 600;
   line-height: 110%; /* 19.8px */
 }
-.minimum__order-img {
-}
 /* WHY END */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CONTACT */
 
 .contact__wrapper {
@@ -541,7 +519,6 @@ main {
   justify-content:start;
 }
 .contact__title {
-  /* margin-top: 180px; */
   max-width: 844px;
   width: 100%;
   color: #FFF;
@@ -832,7 +809,6 @@ main {
   }
   .why__we {
     font-size: 18px;
-    /* margin: 0 auto; */
     margin: 0 auto;
     margin-bottom: 16px;
     margin-top: 68px;
@@ -899,10 +875,7 @@ main {
   .why__price-wrapper {
     padding: 24px;
     flex-direction: column;
-    /* align-items: center; */
-    /* height: 1111px; */
     height: 100%;
-    /* max-width: 450px; */
     width: 100%;
     gap: 24px;
     margin-bottom: 68px;
@@ -1053,9 +1026,6 @@ main {
   .why__we {
     padding-left: 0;
   }
-  /* .why {
-    padding-right: 0;
-  } */
 }
 @media (max-width: 362px) {
   .why {

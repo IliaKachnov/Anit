@@ -1574,6 +1574,7 @@ line-height: 120%; /* 21.6px */
   line-height: 110%; /* 35.2px */
 }
 .review__text {
+  text-align: left;
   margin-top: 16px;
   color: #081A32;
   font-size: 24px;
