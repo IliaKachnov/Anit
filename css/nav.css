@@ -6,7 +6,6 @@
   transform: translateX(-50%);
   padding-left: 25px;
   padding-right: 25px;
-  /* transition: all .2s ease-in-out; */
   z-index: 3;
 }
 .nav.active {
@@ -53,7 +52,7 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 32px;
-  background: rgba(255, 255, 255, 0.80);
+  background: rgba(255, 255, 255, 1);
 }
 .nav__link,
 .nav__dropdown-item {
