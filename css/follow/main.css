@@ -2865,6 +2865,9 @@ background: var(--red, #D7171F);
   .mySwiper1 {
     width: 720px;
   }
+  .review__text {
+    text-align: left;
+  }
   .review__items {
     max-width: 720px;
     width: 100%;

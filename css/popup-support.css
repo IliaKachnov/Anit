@@ -1,3 +1,4 @@
+.popup__support-fix,
 .popup__review,
 .popup__support {
   position: fixed;
@@ -12,11 +13,13 @@
   visibility: hidden;
   transition: all ease .2s 0s;
 }
+.popup__support-fix.open,
 .popup__review.open,
 .popup__support.open {
   opacity: 1;
   visibility: visible;
 }
+.popup__support-fix.open .popup__support__content,
 .popup__review.open .popup__support__content ,
 .popup__support.open .popup__support__content {
   opacity: 1;
@@ -51,6 +54,15 @@
   z-index: 5;
   top: -30px;
   left: 28%;
+}
+.popup__text {
+  margin-top: 20px;
+  padding-right: 20px;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 28.8px */
 }
 .popup__image-wrapper {
   z-index: 15;
@@ -436,6 +448,10 @@
   .star__phone {
     left: 483px;
   }
+  .popup__text {
+    max-width: 500px;
+    padding-right: 20px;
+  }
 }
 @media (max-width: 650px) {
   .crest__full {
@@ -462,6 +478,14 @@
   .popup__form,
   .popup__support__text-wrapper {
     width: 350px;
+  }
+  .popup__support__text-wrapper.fix {
+    max-width: 450px;
+    width: 100%;
+    
+  }
+  .popup__text {
+    overflow: auto;
   }
   .star__name,
   .star__phone {

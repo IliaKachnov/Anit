@@ -66,3 +66,23 @@ const swiper1 = new Swiper(".mySwiper1", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+
+const openFixModals = document.querySelectorAll('#popup__open-fix');
+const closeFixModals = document.querySelectorAll('#support__close-fix');
+const modalFix = document.querySelector('.popup__support-fix'); 
+
+openFixModals.forEach((openFixModal) => {
+  openFixModal.addEventListener('click', () => {
+    modalFix.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+closeFixModals.forEach((closeFixModal) => {
+  closeFixModal.addEventListener('click', () => {
+    modalFix.classList.remove('open')
+    document.body.style.overflow = 'visible';
+  });
+})
