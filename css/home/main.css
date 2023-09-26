@@ -1570,6 +1570,7 @@ line-height: 120%; /* 21.6px */
   color: #081A32;
   font-size: 32px;
   font-style: normal;
+  text-align: left;
   font-weight: 600;
   line-height: 110%; /* 35.2px */
 }

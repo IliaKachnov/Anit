@@ -2331,6 +2331,7 @@ line-height: 120%; /* 21.6px */
   font-style: normal;
   font-weight: 600;
   line-height: 110%; /* 35.2px */
+  text-align: left;
 }
 .review__text {
   text-align: left;
