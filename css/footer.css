@@ -73,14 +73,10 @@
   line-height: 110%; /* 19.8px */
   margin-left: 24px;
 }
-.footer__arrow {
-}
 .footer__logo-wrapper {
   display: flex;
   align-items: center;
   gap: 24px;
-}
-.footer__logo {
 }
 .footer__slogan {
   color: #081A32;
@@ -100,8 +96,6 @@
   font-weight: 600;
   line-height: 110%; /* 15.4px */
   margin-bottom: 8px;
-}
-.footer__politics {
 }
 .footer__items {
   margin-right: 150px;
@@ -175,8 +169,6 @@
   align-items: center;
   gap: 208px;
 }
-.footer__third-wrapper {
-}
 .footer__buy-wrapper {
   display: flex;
   margin-top: 52px;
@@ -194,9 +186,6 @@
   margin-top: 8px;
   gap: 192px;
 }
-.footer__date-mobile-wrapper {
-}
-
 
 .footer__date-mobile-wrapper {
   display: none;

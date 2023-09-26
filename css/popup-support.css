@@ -238,7 +238,6 @@
   border-color: #D7171F;
 }
 .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
-  /* border-color: #D7171F; */
   cursor: pointer;
 }
 .custom-checkbox:not(:disabled):active+label::before {

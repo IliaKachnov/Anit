@@ -65,16 +65,11 @@ main {
   align-items: start;
   justify-content: start;
   width: 351px;
-  /* border-radius: 32px; */
-  /* border: 1px solid rgba(8, 26, 50, 0.15); */
-  /* padding: 13px 16px; */
   color: var(--black, #081A32);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 110%; /* 17.6px */
-  /* transition: all .2s ease; */
-  /* cursor: default; */
 }
 .blocks__reasons-wrapper {
   margin-top: 24px;
@@ -840,6 +835,8 @@ main {
   .cloud__big-img {
     display: none;
   }
+  .result__item-img.third,
+  .result__item-img.second,
   .result__item-img.first {
     display: none;
   }
@@ -850,10 +847,19 @@ main {
     background-image: url('../../img/demo-user-mid.png');
     background-position: center center;
   }
-  /* .result__item.second {
-    background-image: url('../../img/demo-');
+  .result__item.second {
+    background-image: url('../../img/clock-mid.jpg');
+    transform: scaleX(-1);
     background-position: center center;
-  } */
+  }
+  .result__item-text-wrapper.second {
+    transform: scaleX(-1);
+  }
+  .result__item.third {
+    background-image: url('../../img/hand-mid.jpg');
+    background-position: center center;
+  }
+
 
   .cloud__title {
     font-size: 48px;
