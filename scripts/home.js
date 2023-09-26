@@ -46,39 +46,6 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 
-
-
-// const btnNextFirst = document.querySelector('#next-first');
-// const prevBtnSecond = document.querySelector('#prev-btn-second');
-// const nextBtnSecond = document.querySelector('#next-btn-third')
-// const prevBtnThird = document.querySelector('#prev-btn-third');
-
-// const reviewItemFirst = document.querySelector('.review__item.first');
-// const reviewItemSecond = document.querySelector('.review__item.second');
-// const reviewItemThird = document.querySelector('.review__item.third');
-
-
-// btnNextFirst.addEventListener('click', () => {
-//   reviewItemFirst.classList.add('hide');
-//   reviewItemSecond.classList.remove('hide')
-// })
-
-// prevBtnSecond.addEventListener('click', () => {
-//   reviewItemFirst.classList.remove('hide');
-//   reviewItemSecond.classList.add('hide')
-// })
-
-// nextBtnSecond.addEventListener('click', () => {
-//   reviewItemSecond.classList.add('hide');
-//   reviewItemThird.classList.remove('hide');
-// })
-
-// prevBtnThird.addEventListener('click', () => {
-//   reviewItemSecond.classList.remove('hide');
-//   reviewItemThird.classList.add('hide');
-// })
-
-
 const elementToAddClass = document.querySelector('.screen');
 function addClassOnScroll() {
 
