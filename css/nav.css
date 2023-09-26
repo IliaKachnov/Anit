@@ -43,6 +43,8 @@
   margin-top: 8px;
 }
 .nav__main {
+  position: relative;
+  z-index: 4;
   padding-left: 24px;
   padding-right: 24px;
   height: 48px;
@@ -53,6 +55,11 @@
   justify-content: space-between;
   border-radius: 32px;
   background: rgba(255, 255, 255, 1);
+  backdrop-filter: blur(0px);
+}
+.nav__link {
+  background-color: #FFF;
+  backdrop-filter: blur(0px);
 }
 .nav__link,
 .nav__dropdown-item {
