@@ -9,8 +9,8 @@
   z-index: 3;
 }
 .nav.active {
-  background: rgba(236, 241, 246, 0.60);
-  backdrop-filter: blur(25px);
+  background: rgba(236, 241, 246, 0.80);
+  /* backdrop-filter: blur(25px); */
 }
 .nav__wrapper {
   max-width: 1920px;
@@ -55,11 +55,9 @@
   justify-content: space-between;
   border-radius: 32px;
   background: rgba(255, 255, 255, 1);
-  backdrop-filter: blur(0px);
 }
 .nav__link {
   background-color: #FFF;
-  backdrop-filter: blur(0px);
 }
 .nav__link,
 .nav__dropdown-item {
