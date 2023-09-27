@@ -31,3 +31,19 @@ dropdownUsers.forEach((userElement) => {
     
   });
 });
+
+const link = document.querySelector('.btn__wrapper.plan');
+link.addEventListener('click', function(event) {
+  event.preventDefault();
+  const targetElement = document.getElementById('price');
+
+  if (targetElement) {
+    const offset = targetElement.offsetTop - 200;
+
+    // Прокручиваем страницу до этой позиции
+    window.scrollTo({
+      top: offset,
+      behavior: 'smooth'
+    });
+  }
+});
