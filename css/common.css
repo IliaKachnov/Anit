@@ -13,6 +13,10 @@
   src: url('../fonts/Panton-Bold.ttf') format('truetype'); 
 }
 @font-face {
+  font-family: 'PantonExtraBold';
+  src: url('../fonts/Panton-ExtraBold.ttf') format('truetype'); 
+}
+@font-face {
   font-family: 'PantonSemibold';
   src: url('../fonts/Panton-SemiBold.ttf') format('truetype'); 
   font-weight: 700;

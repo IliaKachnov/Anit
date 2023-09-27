@@ -75,15 +75,15 @@
 }
 .footer__logo-wrapper {
   display: flex;
-  align-items: center;
+  align-items: end;
   gap: 24px;
 }
 .footer__slogan {
   color: #081A32;
   font-size: 10px;
-  font-family: 'PantonBold';
+  font-family: 'PantonExtraBold';
   font-style: bold;
-  font-weight: 800;
+  font-weight: 900;
   line-height: 110%; /* 11px */
   letter-spacing: 0.2px;
   text-transform: uppercase;
