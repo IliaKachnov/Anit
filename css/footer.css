@@ -147,10 +147,11 @@
 }
 .footer__free-wrapper {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  align-items: start;
+
 }
 .footer__free {
+  margin-left: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -276,6 +277,7 @@
   .footer__link.first {
     width: 140px;
   }
+ 
   .footer__following-wrapper {
     gap: 83px;
   }

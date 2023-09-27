@@ -311,6 +311,7 @@ main {
 .audit__woman-img {
   width: 517px;
   height: 469px;
+  object-fit: contain;
 }
 .icnlude__title {
   color: #FFF;

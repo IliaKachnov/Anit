@@ -1170,7 +1170,15 @@ main {
     margin-top: 72px;
   }
 }
-
+@media (max-width: 800px) {
+  .description__wrapper {
+    padding-left: 20px;
+    justify-content: start;
+  }
+  /* .description__wrapper.first {
+    padding-left: 10px;
+  } */
+}
 @media (max-width: 760px) {
   .cloud__make-wrapper {
     margin-top: 25.5px;

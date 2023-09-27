@@ -3865,6 +3865,12 @@ background: var(--red, #D7171F);
     width: 264px;
     height: 400px;
   }
+  .not__img.second {
+    display: none;
+  }
+  .not__img.first {
+    display: block;
+  }
   .not__text {
     font-size: 18px;
   }
