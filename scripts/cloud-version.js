@@ -282,8 +282,54 @@ if(window.innerWidth <= 1300) {
 };
 
 const opportunitieText = document.querySelector('.opportunitie__text.change');
-console.log(opportunitieText);
 
 if(window.innerWidth <= 1340) {
   opportunitieText.textContent = 'В процессе работы с Битрикс24 регулярно возникают вопросы консультационного характера, а техподдержка Битрикса отвечает очень долго и не всегда даёт внятный ответ.';
 };
+
+
+const filterMonth = document.querySelector('.filter__month');
+  const filterMonthThree = document.querySelector('.filter__month-three');
+  const filterYearWrapper = document.querySelector('.filter__year-wrapper');
+
+  function removeActiveClass() {
+    filterMonth.classList.remove('active');
+    filterMonthThree.classList.remove('active');
+    filterYearWrapper.classList.remove('active');
+  }
+  filterMonth.addEventListener('click', () => {
+    removeActiveClass();
+    filterMonth.classList.add('active');
+  });
+
+  filterMonthThree.addEventListener('click', () => {
+    removeActiveClass();
+    filterMonthThree.classList.add('active');
+  });
+
+  filterYearWrapper.addEventListener('click', () => {
+    removeActiveClass();
+    filterYearWrapper.classList.add('active');
+  });
+
+
+const tableUserWrapper = document.querySelector('.table__user-wrapper.last');
+const tableDropdown = document.querySelector('.table__dropdown');
+const tableUserAmount = document.querySelector('.table__user-amount.last');
+const tableUserArrow = document.querySelector('.table__user-arrow');
+
+tableUserWrapper.addEventListener('click', () => {
+  tableDropdown.classList.toggle('active');
+  tableUserArrow.classList.toggle('active');
+});
+
+const dropdownUsers = document.querySelectorAll('.table__dropdown-users');
+dropdownUsers.forEach((userElement) => {
+  userElement.addEventListener('click', () => {
+    const userText = userElement.textContent;
+    const userAmount = parseInt(userText.match(/\d+/)[0]);
+    tableUserAmount.textContent = userAmount;
+
+    
+  });
+});

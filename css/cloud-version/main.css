@@ -688,18 +688,32 @@ main {
   height: 48px;
   padding: 14px 24px;
   border-radius: 32px;
-  
+  color: #081A32;
+  background-color: #ECF1F6;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFF;
+ 
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 110%; /* 19.8px */
 }
+.filter__month.active,
 .filter__month-three.active {
   background: var(--brand-red, #D7171F);
+  color: #FFF;
+}
+.filter__year-wrapper.active {
+  color: #FFF;
+  background: var(--brand-red, #D7171F);
+}
+.filter__year-wrapper.active .filter__year {
+  color: #FFF;
+}
+.filter__year-wrapper.active .filter__discount {
+  background-color: #fff;
+  color: var(--brand-red, #D7171F);
 }
 .filter__year-wrapper {
   cursor: pointer;
@@ -914,6 +928,28 @@ main {
 }
 .table__user-wrapper.last::after {
   display: none;
+}
+.table__user-wrapper.last {
+  position: relative;
+  cursor: pointer;
+}
+.table__dropdown.active {
+  width: 189px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  top: 40px;
+  left: 0;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #FFF;
+}
+.table__user-arrow.active {
+  transform: rotate(180deg);
+}
+.table__dropdown {
+  display: none;
+  position: absolute;
 }
 .table__user-wrapper,
 .table__cloud {
@@ -1456,6 +1492,13 @@ main {
   }
   .table__container::-webkit-scrollbar {
     display: none;
+  }
+  .table__dropdown.active {
+    width: 125px;
+    top: 60px;
+  }
+  .table__dropdown-users {
+    font-size: 15px;
   }
   .table__plan {
     gap: 8px;

@@ -1,8 +1,8 @@
 main {
-  background-image: url('../../img/demo-bg.png');
+  /* background-image: url('../../img/demo-bg.png');
   background-size: contain;
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-left-radius: 32px; 
@@ -14,7 +14,11 @@ main {
 
 /* CLOUD */
 .cloud {
-  margin-top: 240px;
+   background-image: url('../../img/demo-bg.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 240px;
 }
 .cloud__wrapper {
   background-image: url('../../img/demo-intro-bg.png');
@@ -135,7 +139,7 @@ main {
   width: 156px;
   margin: 0 auto;
   margin-top: 168px;
-  margin-bottom: 48px;
+  padding-bottom: 78px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -267,6 +271,7 @@ main {
   align-items: center;
   justify-content: center;
   border-radius: 32px;
+  margin-top: -30px;
 }
 .audit__wrapper {
   max-width: 1280px;
@@ -919,10 +924,11 @@ main {
     font-weight: 600;
     line-height: 110%; /* 19.8px */
   }
-  main {
+  .cloud {
     background-image: url('../../img/audit-intro-bg-mobile.png');
-    background-size: contain;
-    background-position: cover center;
+    background-size: cover;
+    background-position: top center;
+    margin-top: 0;
   }
   .scroll__wrapper {
     margin-top: 72px;
@@ -1315,10 +1321,17 @@ main {
 }
 
 @media (max-width: 600px) {
-  main {
+  .cloud {
     background-image: url('../../img/audit-intro-bg-mobile-small.png');
-    background-size: contain;
+    background-size: cover;
     background-position: top center;
+    padding-top: 120px;
+  }
+  .audit__inner-wrapper {
+    margin-top: -50px;
+  }
+  .scroll__wrapper {
+    padding-bottom: 50px;
   }
 }
 

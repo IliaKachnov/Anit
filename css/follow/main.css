@@ -44,6 +44,7 @@ main {
   position: relative;
 }
 .blueprint__sticky-wrapper {
+  z-index: 2;
   top: 100px;
   bottom: 100px;
   position: sticky;
@@ -102,9 +103,21 @@ main {
   background-size: fill;
   background-position: top center;
   background-repeat: no-repeat;
+  position: relative;
   max-width: 844px;
   width: 100%;
   height: 1965px;
+}
+.blue {
+  right: 200px;
+  z-index: 1;
+  position: absolute;
+}
+.pink {
+  left: 100px;
+  top: 1200px;
+  z-index: 1;
+  position: absolute;
 }
 .blueprint__item {
   display: flex;
@@ -2701,6 +2714,14 @@ background: var(--red, #D7171F);
   border: 1px solid #D8DFE5;
   padding: 0;
 }
+@media (min-width: 2200px) {
+  .situation {
+    background-image: url('../../img/follow-footer-bg.png');
+    background-size: cover;
+    background-position: top top;
+    background-repeat: no-repeat;
+  }
+}
 
 @media (max-width: 1330px) {
   .mySwiper1 {
@@ -3011,6 +3032,14 @@ background: var(--red, #D7171F);
   }
 }
 @media (max-width: 760px) {
+  .blue {
+    top: -200px;
+    right: 100px;
+  }
+  .pink {
+    top: 650px;
+    left: -300px;
+  }
   .situation {
     height: 100%;
     padding-top: 60px;

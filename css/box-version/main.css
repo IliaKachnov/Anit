@@ -1,8 +1,5 @@
 main {
-  background-image: url('../../img/box-version-bg.png');
-  background-size: contain;
-  background-position: top center;
-  background-repeat: no-repeat;
+  
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-left-radius: 32px; 
@@ -13,7 +10,11 @@ main {
 
 
 .intro {
-  margin-top: 240px;
+  padding-top: 240px;
+  background-image: url('../../img/box-version-bg.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 .intro__wrapper {
   max-width: 1280px;
@@ -139,7 +140,7 @@ main {
   width: 100%;
   margin: 0 auto;
   margin-top: 168px;
-  margin-bottom: 48px;
+  padding-bottom: 58px;
 }
 .scroll__img {
   width: 24px;
@@ -153,7 +154,7 @@ main {
 
 /*  */
 .opportunities {
-  
+  margin-top: -20px;
   width: 100%;
 }
 .opportunities__wrapper {
@@ -305,6 +306,26 @@ main {
 }
 .prices__item-users-wrapper.second {
   margin-top: 57px;
+  position: relative;
+  cursor: pointer;
+}
+.table__dropdown.active {
+  width: 344px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  top: 45px;
+  left: 0;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #FFF;
+}
+.arrow-dropdown.active {
+  transform: rotate(180deg);
+}
+.table__dropdown {
+  display: none;
+  position: absolute;
 }
 .prices__item-users-wrapper.third {
   margin-top: 57px;
@@ -580,6 +601,10 @@ main {
     flex-wrap: wrap;
     gap: 24px;
   }
+  .table__dropdown.active {
+    max-width: 656px;
+    width: 100%;
+  }
   .opportunities__item.small {
     max-width: 349.5px;
     width: 100%;
@@ -629,7 +654,7 @@ main {
   .prices__item-users-wrapper.third {
     margin-top: 24px;
   }
-  main {
+  .intro {
     background-image: url('../../img/box-version-mobile-intro-bg.png');
   }
   .rate__items-small {

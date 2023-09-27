@@ -281,7 +281,11 @@ main {
   width: 100%;
   height: 1546px;
   border-radius: 32px;
-  background: linear-gradient(138deg, #0D4DA1 23.63%, #83A8D8 101.06%);
+  /* background: linear-gradient(138deg, #0D4DA1 23.63%, #83A8D8 101.06%); */
+  background-image: url('../../img/what-bg.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
   position: relative;
   z-index: 2;
   padding-left: 20px;
@@ -2096,6 +2100,11 @@ line-height: 120%; /* 21.6px */
   }
   .contact__title {
     font-size: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .what {
+    background-image: url('../../img/what-bg-table.png');
   }
 }
 @media (max-width: 760px) {
