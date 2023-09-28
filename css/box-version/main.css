@@ -41,12 +41,12 @@ main {
   margin-top: 16px;
   gap: 12px;
   display: flex;
-  align-items: center;
 }
 .advantage__wrapper.first {
   margin-top: 24px;
 }
 .intro__arrow {
+  margin-top: 6px;
   width: 8px;
   height: 10px;
 }
