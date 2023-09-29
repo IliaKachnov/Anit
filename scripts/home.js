@@ -66,3 +66,7 @@ const swiper1 = new Swiper(".mySwiper1", {
     prevEl: ".swiper-button-prev",
   },
 });
+const cookieWrapper = document.querySelector('.cookie__wrapper');
+cookieWrapper.addEventListener('click', () => {
+  cookieWrapper.classList.add('hide');
+})

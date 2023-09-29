@@ -53,30 +53,39 @@ const labelphone = document.querySelector('.label__phone');
 const inputName = document.querySelector('.popup__name');
 const inputPhone = document.querySelector('.popup__phone');
 const customCheckbox = document.querySelector('.custom-checkbox');
+const innerWrapper = document.querySelector('#success')
+const popupSendWrapper = document.querySelector('.popup__send-wrapper');
+const popupSuccessWrapper = document.querySelector('.popup-success__wrapper');
 
 supportSubmitBtn.addEventListener('submit', (e) => {
   const inputNameValue = inputName.value.trim();
   const inputPhoneValue = inputPhone.value.trim();
 
-
-  if(inputNameValue === '' || inputPhoneValue === '' || !customCheckbox.checked) {
+  if (inputNameValue === '' || inputPhoneValue === '' || !customCheckbox.checked) {
     e.preventDefault();
-    if(inputNameValue === ''){
+    if (inputNameValue === '') {
       labelName.classList.add('hide');
       inputName.classList.add('wrong');
     }
-    if(!customCheckbox.checked) {
-      customCheckbox.classList.add('active')
+    if (!customCheckbox.checked) {
+      customCheckbox.classList.add('active');
     }
-    if(inputPhoneValue === '') {
+    if (inputPhoneValue === '') {
       labelphone.classList.add('hide');
       inputPhone.classList.add('wrong');
     }
   } else {
+    e.preventDefault();
     labelphone.classList.remove('hide');
     labelName.classList.remove('hide');
+    innerWrapper.classList.add('hide');
+    popupSuccessWrapper.classList.remove('hide')
   }
-})
+});
+
+
+
+
 
 
 const imageElement = document.getElementById("burger");
